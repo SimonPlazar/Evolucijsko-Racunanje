@@ -20,6 +20,7 @@ class CEO:
             [self.rng.nextDouble() for _ in range(Dim)]
             for _ in range(Np)
         ]) * (Varmax - Varmin) + Varmin
+
         self.fit = self.fitness(self.Population)
         self.fBest = np.min(self.fit)
         self.index_best = np.argmin(self.fit)
