@@ -51,10 +51,6 @@ public class RNG_Test {
             e.printStackTrace();
         }
 
-//        for (int i = 0; i < 10; i++) {
-//            System.out.println(RNG.nextDouble());
-//        }
-
         // Equivalent to rng.rand()
         System.out.println(RNG.nextDouble());
         // Equivalent to rng.rand()
@@ -63,5 +59,9 @@ public class RNG_Test {
         System.out.println(RNG.nextInt(0, 10));
         // Equivalent to rng.permutation(5)
         System.out.println(Arrays.toString(RNG.randomPermutation(5)));
+
+//        for (int i = 0; i < 10; i++) {
+//            System.out.println(RNG.nextDouble());
+//        }
     }
 }
