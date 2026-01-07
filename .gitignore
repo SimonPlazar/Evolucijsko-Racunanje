@@ -6,6 +6,8 @@
 *.csv
 *.m4a
 __pycache__/
+*/ceo_random.txt
+/EARS/
 
 ### JetBrains ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
