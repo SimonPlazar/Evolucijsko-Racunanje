@@ -5,6 +5,7 @@ import org.um.feri.ears.problems.*;
 import org.um.feri.ears.util.annotation.AlgorithmParameter;
 import org.um.feri.ears.util.random.PredefinedRandom;
 import org.um.feri.ears.util.random.RNG;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,13 +47,21 @@ public class CEO extends NumberAlgorithm {
             double fBestOld = bestSolution.getEval();
 
             int[] indices = RNG.randomPermutation(popSize);
+
+            // Population Index Shuffling - CORRECT
+//            if (task.getNumberOfIterations() <= 1) {
+//                System.out.print("DEBUG: Iter " + task.getNumberOfIterations() + " index_shuffle: ");
+//                for (int i = 0; i < 5; i++) System.out.print(indices[i] + " ");
+//                System.out.println();
+//            }
+
             double[] lb = getPopBounds(false, dim);
             double[] ub = getPopBounds(true, dim);
 
             for (int i = 0; i < popSize; i += 2) {
                 if (task.isStopCriterion()) break;
 
-                int[] pair = {indices[i], indices[i+1]};
+                int[] pair = {indices[i], indices[i + 1]};
 
                 for (int k = 0; k < 2; k++) {
                     NumberSolution<Double> parent = population.get(pair[k]);
@@ -60,11 +69,24 @@ public class CEO extends NumberAlgorithm {
                     // EDM Mapiranje
                     double[][] chaosPoints = generateEDM(parent, lb, ub, dim, k);
 
-                    // 1:1 RNG Draws (Vrstni red mora biti identičen Pythonu!)
                     double mutChoice = RNG.nextDouble();
+                    if (task.getNumberOfIterations() <= 1) {
+                        System.out.println("DEBUG: iter " + task.getNumberOfIterations() +
+                                " mut_choice[" + k + "] = " + mutChoice);
+                    }
                     double[] r = new double[N];
                     for (int n = 0; n < N; n++) r[n] = RNG.nextDouble();
+                    for (int n = 0; n < 5; n++) {
+                        if (task.getNumberOfIterations() <= 1) {
+                            System.out.println("DEBUG: iter " + task.getNumberOfIterations() +
+                                    " r[" + k + "][" + n + "] = " + r[n]);
+                        }
+                    }
                     double CR = RNG.nextDouble();
+                    if (task.getNumberOfIterations() <= 1) {
+                        System.out.println("DEBUG: iter " + task.getNumberOfIterations() +
+                                " CR[" + k + "] = " + CR);
+                    }
 
                     List<NumberSolution<Double>> trials = new ArrayList<>();
                     for (int n = 0; n < N; n++) {
@@ -78,9 +100,52 @@ public class CEO extends NumberAlgorithm {
                         }
 
                         // Binomial Crossover
-                        int jRand = RNG.nextInt(dim);
+//                        int jRand = RNG.nextInt(dim);
+//                        if (task.getNumberOfIterations() <= 1 && n < 5) {
+//                            System.out.println("DEBUG: iter " + task.getNumberOfIterations() +
+//                                    " j_rand[" + n + "] = " + jRand);
+//                        }
+//                        for (int d = 0; d < dim; d++) {
+//                            double rv = RNG.nextDouble();
+//                            if (task.getNumberOfIterations() <= 1 && n == 0 && d < 5) {
+//                                System.out.println("DEBUG: iter " + task.getNumberOfIterations() +
+//                                        " crossover_mask[0][" + d + "] = " + rv);
+//                            }
+//
+//                            if (!(rv < CR || d == jRand)) {
+//                                trialValues.set(d, parent.getValue(d));
+//                            }
+//                        }
+                        // 1. Draw ALL mask RNGs first (Python order)
+                        boolean[] mask = new boolean[dim];
                         for (int d = 0; d < dim; d++) {
-                            if (!(RNG.nextDouble() < CR || d == jRand)) {
+                            double rv = RNG.nextDouble();
+
+                            // DEBUG — match Python
+                            if (task.getNumberOfIterations() <= 1 && n == 0 && d < 5) {
+                                System.out.println(
+                                        "DEBUG: iter " + task.getNumberOfIterations() +
+                                                " crossover_mask[0][" + d + "] = " + rv
+                                );
+                            }
+
+                            mask[d] = rv < CR;
+                        }
+
+                        // 2. Draw jRand AFTER masks
+                        int jRand = RNG.nextInt(dim);
+
+                        // DEBUG — match Python
+                        if (task.getNumberOfIterations() <= 1 && n < 5) {
+                            System.out.println(
+                                    "DEBUG: iter " + task.getNumberOfIterations() +
+                                            " j_rand[" + n + "] = " + jRand
+                            );
+                        }
+
+                        // 3. Apply crossover logic (NO RNG here)
+                        for (int d = 0; d < dim; d++) {
+                            if (!(mask[d] || d == jRand)) {
                                 trialValues.set(d, parent.getValue(d));
                             }
                         }
@@ -131,6 +196,11 @@ public class CEO extends NumberAlgorithm {
             population.add(s);
         }
         updateBestSolution(); // Postavi začetni globalni minimum
+
+        // Izpis prvih 5 članov populacije za debugging - CORRECT
+//        for (int i = 0; i < Math.min(5, popSize); i++) {
+//            System.out.println("Population member " + i + ": " + population.get(i));
+//        }
     }
 
     private void updateBestSolution() {
