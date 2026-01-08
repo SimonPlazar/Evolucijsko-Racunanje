@@ -119,34 +119,38 @@ class CEO:
 
                 # Evaluate each chaotic sequence
                 for k in range(2):
+                    # 1. Map chaotic samples back to problem space
                     xy_chaos = chaos_total[k * self.N:(k + 1) * self.N, :]
-                    # Executing Eq. (5) yields the actual position of the corresponding optimization problem.
-                    xy_chaos_dot = ((xy_chaos - self.low_chacos[k]) / (self.up_chacos[k] - self.low_chacos[k])) * (
-                                ub - lb) + lb
-
+                    xy_chaos_dot = ((xy_chaos - self.low_chacos[k]) / (self.up_chacos[k] - self.low_chacos[k])) * (ub - lb) + lb
                     xy_chaos_dot = self.bound_constraint(xy_chaos_dot)
 
-                    # if np.random.rand() < 0.5:
-                    if self.rng.nextDouble() < 0.5:
-                        # xy_hat = xy[k, :] + np.random.rand(self.N, 1) * (xy_chaos_dot - xy[k, :]) # Mutation Eq. (7)
-                        r = np.array([[self.rng.nextDouble()] for _ in range(self.N)])
-                        xy_hat = xy[k, :] + r * (xy_chaos_dot - xy[k, :]) # Mutation Eq. (7)
+                    # 2. DRAW ALL RNG FOR THIS PARENT UNCONDITIONALLY (To match Java)
+                    # 1. Mutation Choice
+                    mut_choice_val = self.rng.nextDouble()
+
+                    # 2. Mutation Scales (Always N calls)
+                    r = np.array([[self.rng.nextDouble()] for _ in range(self.N)])
+
+                    # 3. Crossover Rate (Always 1 call)
+                    CR = self.rng.nextDouble()
+
+                    # 3. Logic for Mutation Choice (Uses already drawn mutation_choice_rand)
+                    if mut_choice_val < 0.5:
+                        xy_hat = xy[k, :] + r * (xy_chaos_dot - xy[k, :])
                     else:
-                        # xy_hat = self.Best + np.random.rand(self.N, 1) * (xy_chaos_dot - xy[k, :]) # Mutation Eq. (8)
-                        r = np.array([[self.rng.nextDouble()] for _ in range(self.N)])
                         xy_hat = self.Best + r * (xy_chaos_dot - xy[k, :])
 
-                    # CR = np.random.rand()
-                    CR = self.rng.nextDouble()
-                    xy_trial = self.binomial_crossover(xy[k, :], xy_hat, CR) # Crossover Eq. (9)
+                    # 4. Binomial Crossover
+                    # binomial_crossover MUST consume [N * Dim] for mask and [N] for j_rand
+                    xy_trial = self.binomial_crossover(xy[k, :], xy_hat, CR)
                     xy_trial = self.bound_constraint(xy_trial)
 
+                    # 5. Evaluation and Selection
                     fit_xy_trial = self.fitness(xy_trial)
                     fBest_xy_trial = np.min(fit_xy_trial)
                     index_best = np.argmin(fit_xy_trial)
                     xy_trial_star = xy_trial[index_best, :]
 
-                    # Selection Eq. (10)
                     if fBest_xy_trial < self.fit[index[k]]:
                         self.Population[index[k], :] = xy_trial_star
                         self.fit[index[k]] = fBest_xy_trial
@@ -161,13 +165,13 @@ class CEO:
                 break
 
             self.t += 1
-            if self.t % 10 == 0:
-                print(f'iter={self.t}  ObjVal={self.fBest:.16f}')
+            # print(f'iter={self.t}  ObjVal={self.fBest:.16f}')
 
             self.history.append(self.fBest)
             self.FEvals += self.N * self.Np
 
             # Debug
-            print(f"RNG index: {self.rng.index}")
+            # self.rng.nextDouble()
+            print(f"iter={self.t} ObjVal={self.fBest:.16f}  RNG index: {self.rng.index}")
 
         return self.Best, self.fBest, self.history

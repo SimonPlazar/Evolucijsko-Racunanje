@@ -1,13 +1,10 @@
 package org.um.feri.ears.algorithms.so.ceo;
 
 import org.um.feri.ears.algorithms.NumberAlgorithm;
-import org.um.feri.ears.algorithms.AlgorithmInfo;
-import org.um.feri.ears.algorithms.Author;
 import org.um.feri.ears.problems.*;
 import org.um.feri.ears.util.annotation.AlgorithmParameter;
-import org.um.feri.ears.util.Util;
+import org.um.feri.ears.util.random.PredefinedRandom;
 import org.um.feri.ears.util.random.RNG;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,16 +12,15 @@ public class CEO extends NumberAlgorithm {
 
     @AlgorithmParameter(name = "population size")
     private int popSize;
-
     @AlgorithmParameter(name = "chaotic samples")
     private int N;
 
     private List<NumberSolution<Double>> population;
-    private NumberSolution<Double> best;
+    private NumberSolution<Double> bestSolution; // Naša referenca na globalno najboljšo rešitev
 
-    // Constants for chaotic mapping (from Python source)
     private final double[] lowChacos = {-0.5, -0.25};
     private final double[] upChacos = {0.5, 0.25};
+
     private int stagnationCounter = 0;
 
     public CEO() {
@@ -33,182 +29,198 @@ public class CEO extends NumberAlgorithm {
 
     public CEO(int popSize, int N) {
         super();
-        // Np must be even in this algorithm
         this.popSize = (popSize % 2 == 0) ? popSize : popSize + 1;
         this.N = N;
-
-        au = new Author("student", "student@um.si");
-        ai = new AlgorithmInfo("CEO", "Chaotic Evolution Optimization",
-                "@article{ceo2024, title={Chaotic evolution optimization}, author={...}, year={2024}}");
     }
 
     @Override
     public NumberSolution<Double> execute(Task<NumberSolution<Double>, DoubleProblem> task) throws StopCriterionException {
         this.task = task;
-        resetToDefaultsBeforeNewRun();
+        this.stagnationCounter = 0;
+        int dim = task.problem.getNumberOfDimensions();
+
+        // 1. Inicializacija in postavitev začetnega bestSolution
         initPopulation();
 
         while (!task.isStopCriterion()) {
-            double lastIterBest = best.getEval(); // Use getEval() instead of getFitness()
+            double fBestOld = bestSolution.getEval();
 
-            // Calculate current search domain bounds based on population (Eq. 4 logic)
-            double[] ub = getPopulationBounds(true);
-            double[] lb = getPopulationBounds(false);
-
-            int[] randNum = RNG.randomPermutation(popSize);
+            int[] indices = RNG.randomPermutation(popSize);
+            double[] lb = getPopBounds(false, dim);
+            double[] ub = getPopBounds(true, dim);
 
             for (int i = 0; i < popSize; i += 2) {
                 if (task.isStopCriterion()) break;
 
-                int idx1 = randNum[i];
-                int idx2 = randNum[i + 1];
+                int[] pair = {indices[i], indices[i+1]};
 
-                NumberSolution<Double> xInd = population.get(idx1);
-                NumberSolution<Double> yInd = population.get(idx2);
-
-                // EDM seeds mapping
-                double[] x0 = mapToChaotic(xInd.getVariables(), lb, ub, 0);
-                double[] y0 = mapToChaotic(yInd.getVariables(), lb, ub, 1);
-
-                // Generate Chaotic Sequences (Exponential Discrete Memristor)
-                double[][] chaosTotal = EDM(x0, y0, N);
-
-                int[] pair = {idx1, idx2};
                 for (int k = 0; k < 2; k++) {
-                    NumberSolution<Double> currentParent = population.get(pair[k]);
-                    NumberSolution<Double> bestTrialOfN = null;
+                    NumberSolution<Double> parent = population.get(pair[k]);
 
-                    for (int j = 0; j < N; j++) {
+                    // EDM Mapiranje
+                    double[][] chaosPoints = generateEDM(parent, lb, ub, dim, k);
+
+                    // 1:1 RNG Draws (Vrstni red mora biti identičen Pythonu!)
+                    double mutChoice = RNG.nextDouble();
+                    double[] r = new double[N];
+                    for (int n = 0; n < N; n++) r[n] = RNG.nextDouble();
+                    double CR = RNG.nextDouble();
+
+                    List<NumberSolution<Double>> trials = new ArrayList<>();
+                    for (int n = 0; n < N; n++) {
                         if (task.isStopCriterion()) break;
 
-                        // Map chaotic sample back to problem space
-                        double[] xyChaos = chaosTotal[k == 0 ? j : j + N];
-                        double[] xyChaosDot = mapToProblemSpace(xyChaos, lb, ub, k);
-
-                        // Use framework to ensure feasibility
-                        task.problem.makeFeasible(xyChaosDot);
-
-                        // Mutation (Eq. 7 & 8)
-                        double[] xyHat = new double[task.problem.getNumberOfDimensions()];
-                        boolean useParent = RNG.nextDouble() < 0.5;
-                        for (int d = 0; d < task.problem.getNumberOfDimensions(); d++) {
-                            double base = useParent ? currentParent.getValue(d) : best.getValue(d);
-                            xyHat[d] = base + RNG.nextDouble() * (xyChaosDot[d] - currentParent.getValue(d));
+                        List<Double> trialValues = new ArrayList<>(dim);
+                        for (int d = 0; d < dim; d++) {
+                            // Uporabljamo bestSolution.getValue(d) za Eq. 8
+                            double base = (mutChoice < 0.5) ? parent.getValue(d) : bestSolution.getValue(d);
+                            trialValues.add(base + r[n] * (chaosPoints[n][d] - parent.getValue(d)));
                         }
 
-                        // Crossover (Eq. 9)
-                        double[] trialPos = binomialCrossover(currentParent.getVariables(), xyHat, RNG.nextDouble());
-                        task.problem.makeFeasible(trialPos);
+                        // Binomial Crossover
+                        int jRand = RNG.nextInt(dim);
+                        for (int d = 0; d < dim; d++) {
+                            if (!(RNG.nextDouble() < CR || d == jRand)) {
+                                trialValues.set(d, parent.getValue(d));
+                            }
+                        }
 
-                        NumberSolution<Double> trialSol = new NumberSolution<>(Util.toDoubleArrayList(trialPos));
+                        NumberSolution<Double> trialSol = new NumberSolution<>(trialValues);
+                        handleMirrorBounds(trialSol);
                         task.eval(trialSol);
-
-                        // Find the best among N samples
-                        if (bestTrialOfN == null || task.problem.isFirstBetter(trialSol, bestTrialOfN)) {
-                            bestTrialOfN = trialSol;
-                        }
+                        trials.add(trialSol);
                     }
 
-                    // Selection (Eq. 10): Replace parent if trial is better
-                    if (bestTrialOfN != null && task.problem.isFirstBetter(bestTrialOfN, population.get(pair[k]))) {
-                        population.set(pair[k], bestTrialOfN);
-                        if (task.problem.isFirstBetter(bestTrialOfN, best)) {
-                            best = new NumberSolution<>(bestTrialOfN);
+                    // Selekcija (Eq. 10)
+                    if (!trials.isEmpty()) {
+                        NumberSolution<Double> localBestTrial = getBestFromList(trials);
+                        if (task.problem.isFirstBetter(localBestTrial, parent)) {
+                            population.set(pair[k], new NumberSolution<>(localBestTrial));
+                            // POMEMBNO: Takojšnje preverjanje, če je nova rešitev boljša od globalne
+                            if (task.problem.isFirstBetter(localBestTrial, bestSolution)) {
+                                bestSolution = new NumberSolution<>(localBestTrial);
+                            }
                         }
                     }
                 }
             }
 
-            if (handleStagnation(lastIterBest, best.getEval())) break;
             task.incrementNumberOfIterations();
+
+            // Izpis indeksa za debugging (če uporabljate PredefinedRandom)
+            printDebug();
+
+            // Stagnacija (1:1 Python logika)
+            if (handleStagnation(fBestOld, bestSolution.getEval())) {
+                break;
+            }
         }
-        return best;
+        return bestSolution;
+    }
+
+    @Override
+    public void resetToDefaultsBeforeNewRun() {
+
     }
 
     private void initPopulation() throws StopCriterionException {
         population = new ArrayList<>();
         for (int i = 0; i < popSize; i++) {
-            NumberSolution<Double> sol = task.generateRandomEvaluatedSolution();
-            population.add(sol);
-            // task.problem.isFirstBetter handles minimization/maximization automatically
-            if (best == null || task.problem.isFirstBetter(sol, best)) {
-                best = new NumberSolution<>(sol);
+            if (task.isStopCriterion()) break;
+            NumberSolution<Double> s = task.generateRandomEvaluatedSolution();
+            population.add(s);
+        }
+        updateBestSolution(); // Postavi začetni globalni minimum
+    }
+
+    private void updateBestSolution() {
+        if (population.isEmpty()) return;
+        bestSolution = population.get(0);
+        for (int i = 1; i < population.size(); i++) {
+            if (task.problem.isFirstBetter(population.get(i), bestSolution)) {
+                bestSolution = population.get(i);
             }
         }
-    }
-
-    private double[][] EDM(double[] x0, double[] y0, int iter) {
-        int dim = task.problem.getNumberOfDimensions();
-        double k = 2.66;
-        double[][] x = new double[iter + 1][dim];
-        double[][] y = new double[iter + 1][dim];
-        x[0] = x0.clone();
-        y[0] = y0.clone();
-
-        for (int j = 0; j < iter; j++) {
-            for (int d = 0; d < dim; d++) {
-                x[j + 1][d] = k * (Math.exp(-Math.cos(Math.PI * y[j][d])) - 1) * x[j][d];
-                y[j + 1][d] = y[j][d] + x[j][d];
-            }
-        }
-
-        double[][] result = new double[2 * iter][dim];
-        for (int j = 0; j < iter; j++) {
-            result[j] = x[j + 1];
-            result[j + iter] = y[j + 1];
-        }
-        return result;
-    }
-
-    private double[] binomialCrossover(List<Double> p, double[] v, double CR) {
-        int dim = v.length;
-        double[] u = new double[dim];
-        int jRand = RNG.nextInt(dim);
-        for (int j = 0; j < dim; j++) {
-            u[j] = (RNG.nextDouble() < CR || j == jRand) ? v[j] : p.get(j);
-        }
-        return u;
-    }
-
-    private double[] mapToChaotic(List<Double> x, double[] lb, double[] ub, int k) {
-        double[] mapped = new double[x.size()];
-        for (int i = 0; i < x.size(); i++) {
-            double range = ub[i] - lb[i];
-            mapped[i] = ((x.get(i) - lb[i]) / (range + 1e-18)) * (upChacos[k] - lowChacos[k]) + lowChacos[k];
-        }
-        return mapped;
-    }
-
-    private double[] mapToProblemSpace(double[] xChaos, double[] lb, double[] ub, int k) {
-        double[] mapped = new double[xChaos.length];
-        for (int i = 0; i < xChaos.length; i++) {
-            mapped[i] = ((xChaos[i] - lowChacos[k]) / (upChacos[k] - lowChacos[k])) * (ub[i] - lb[i]) + lb[i];
-        }
-        return mapped;
-    }
-
-    private double[] getPopulationBounds(boolean upper) {
-        int dim = task.problem.getNumberOfDimensions();
-        double[] res = new double[dim];
-        for (int d = 0; d < dim; d++) {
-            double val = population.get(0).getValue(d);
-            for (int i = 1; i < popSize; i++) {
-                val = upper ? Math.max(val, population.get(i).getValue(d)) : Math.min(val, population.get(i).getValue(d));
-            }
-            res[d] = val;
-        }
-        return res;
     }
 
     private boolean handleStagnation(double oldBest, double newBest) {
-        if (Math.abs(oldBest - newBest) < 1e-8) stagnationCounter++;
-        else stagnationCounter = 0;
-        return stagnationCounter > 50;
+        if (task.getStopCriterion() != StopCriterion.STAGNATION) {
+            return false;
+        }
+
+        if (Math.abs(oldBest - newBest) < 1e-8) {
+            stagnationCounter++;
+            return stagnationCounter > 50;
+        } else {
+            stagnationCounter = 0;
+            return false;
+        }
     }
 
-    @Override
-    public void resetToDefaultsBeforeNewRun() {
-        stagnationCounter = 0;
-        best = null;
+    private void printDebug() {
+        int iter = (task != null) ? task.getNumberOfIterations() : -1;
+        double best = (bestSolution != null) ? bestSolution.getEval() : Double.NaN;
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("iter=").append(iter).append("  best=").append(best);
+
+        var selectedRng = RNG.getSelectedRng();
+        if (selectedRng instanceof PredefinedRandom pr) {
+            sb.append("  RNG index: ").append(pr.getCurrentIndex());
+        }
+
+        System.out.println(sb.toString());
+    }
+
+    private void handleMirrorBounds(NumberSolution<Double> s) {
+        for (int i = 0; i < task.problem.getNumberOfDimensions(); i++) {
+            double v = s.getValue(i);
+            double low = task.problem.getLowerLimit(i);
+            double up = task.problem.getUpperLimit(i);
+            if (v < low) s.setValue(i, Math.min(up, 2 * low - v));
+            else if (v > up) s.setValue(i, Math.max(low, 2 * up - v));
+        }
+//        task.problem.makeFeasible(s);
+    }
+
+    private double[][] generateEDM(NumberSolution<Double> p, double[] lb, double[] ub, int dim, int k) {
+        double[] x = new double[dim];
+        double[] y = new double[dim];
+        double eps = 1e-18;
+        for (int d = 0; d < dim; d++) {
+            double norm = (p.getValue(d) - lb[d]) / (ub[d] - lb[d] + eps);
+            x[d] = norm * (upChacos[0] - lowChacos[0]) + lowChacos[0];
+            y[d] = norm * (upChacos[1] - lowChacos[1]) + lowChacos[1];
+        }
+        double[][] chaos = new double[N][dim];
+        for (int n = 0; n < N; n++) {
+            for (int d = 0; d < dim; d++) {
+                x[d] = 2.66 * (Math.exp(-Math.cos(Math.PI * y[d])) - 1.0) * x[d];
+                y[d] = y[d] + x[d];
+                double cVal = (k == 0) ? x[d] : y[d];
+                chaos[n][d] = ((cVal - lowChacos[k]) / (upChacos[k] - lowChacos[k])) * (ub[d] - lb[d]) + lb[d];
+            }
+        }
+        return chaos;
+    }
+
+    private double[] getPopBounds(boolean upper, int dim) {
+        double[] b = new double[dim];
+        for (int d = 0; d < dim; d++) {
+            b[d] = population.get(0).getValue(d);
+            for (int i = 1; i < popSize; i++) {
+                double val = population.get(i).getValue(d);
+                b[d] = upper ? Math.max(b[d], val) : Math.min(b[d], val);
+            }
+        }
+        return b;
+    }
+
+    private NumberSolution<Double> getBestFromList(List<NumberSolution<Double>> list) {
+        NumberSolution<Double> b = list.get(0);
+        for (NumberSolution<Double> s : list) {
+            if (task.problem.isFirstBetter(s, b)) b = s;
+        }
+        return b;
     }
 }

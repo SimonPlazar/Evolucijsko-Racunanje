@@ -10,6 +10,8 @@ class CEO:
         self.N = N
         self.MaxFES = MaxFES
 
+        np.random.seed(1337)
+
         if Np % 2 != 0:
             raise ValueError("Np must be even!")
 
@@ -137,10 +139,12 @@ class CEO:
                 break
 
             self.t += 1
-            if self.t % 10 == 0:
-                print(f'iter={self.t}  ObjVal={self.fBest:.16f}')
+            # if self.t % 10 == 0:
+            #     print(f'iter={self.t}  ObjVal={self.fBest:.16f}')
 
             self.history.append(self.fBest)
             self.FEvals += self.N * self.Np
+
+            print(f"iter={self.t} ObjVal={self.fBest:.16f}")
 
         return self.Best, self.fBest, self.history

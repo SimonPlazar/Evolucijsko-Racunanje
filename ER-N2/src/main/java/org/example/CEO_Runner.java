@@ -63,7 +63,8 @@ public class CEO_Runner {
         // 2. Define the task
         Task task = new Task(
                 problem,
-                StopCriterion.ITERATIONS,
+//                StopCriterion.ITERATIONS,
+                StopCriterion.STAGNATION,
                 0,
                 0,
                 MaxFES
