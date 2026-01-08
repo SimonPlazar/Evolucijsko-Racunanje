@@ -53,7 +53,7 @@ public class CEO_Runner {
 
 
         int Dim = 100;
-        int MaxFES = Dim * 1000;
+        int MaxFES = Dim * 100;
         int popSize = 30;
         int N = 10;
 
@@ -63,10 +63,10 @@ public class CEO_Runner {
         // 2. Define the task
         Task task = new Task(
                 problem,
-                StopCriterion.EVALUATIONS,
-                MaxFES,
+                StopCriterion.ITERATIONS,
                 0,
-                0
+                0,
+                MaxFES
         );
 
         // 3. Create the algorithm
@@ -77,7 +77,13 @@ public class CEO_Runner {
         try {
             best = alg.execute(task);
             System.out.println("Best solution found = " + best);
+            System.out.println(" Evaluations: " + task.getNumberOfEvaluations());
+            System.out.println(" Iterations: " + task.getNumberOfIterations());
+
         } catch (StopCriterionException e) {
+            System.out.println("Algorithm stopped due to stop criterion: " + e.getMessage());
+            System.out.println(" Evaluations: " + task.getNumberOfEvaluations());
+            System.out.println(" Iterations: " + task.getNumberOfIterations());
             e.printStackTrace();
         }
     }
