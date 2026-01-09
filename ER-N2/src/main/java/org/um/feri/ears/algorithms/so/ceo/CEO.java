@@ -1,5 +1,7 @@
 package org.um.feri.ears.algorithms.so.ceo;
 
+import org.um.feri.ears.algorithms.AlgorithmInfo;
+import org.um.feri.ears.algorithms.Author;
 import org.um.feri.ears.algorithms.NumberAlgorithm;
 import org.um.feri.ears.problems.*;
 import org.um.feri.ears.util.annotation.AlgorithmParameter;
@@ -15,6 +17,8 @@ public class CEO extends NumberAlgorithm {
     private int popSize;
     @AlgorithmParameter(name = "chaotic samples")
     private int N;
+    @AlgorithmParameter(name = "debug mode")
+    public boolean isDebug = false;
 
     private List<NumberSolution<Double>> population;
     private NumberSolution<Double> bestSolution; // Naša referenca na globalno najboljšo rešitev
@@ -26,12 +30,26 @@ public class CEO extends NumberAlgorithm {
 
     public CEO() {
         this(30, 10);
+        this.isDebug = false;
     }
 
     public CEO(int popSize, int N) {
         super();
         this.popSize = (popSize % 2 == 0) ? popSize : popSize + 1;
         this.N = N;
+        this.isDebug = false;
+
+        au = new Author("Simon", "simon.plazar@student.um.si");
+        ai = new AlgorithmInfo("CEO", "Chaotic Evolution Optimization", "");
+    }
+
+    public CEO(int popSize, int N, boolean debug) {
+        this(popSize, N);
+        this.isDebug = debug;
+    }
+
+    public void setDebug(boolean debug) {
+        this.isDebug = debug;
     }
 
     @Override
@@ -42,6 +60,10 @@ public class CEO extends NumberAlgorithm {
 
         // 1. Inicializacija in postavitev začetnega bestSolution
         initPopulation();
+        // Izpis prvih 5 članov populacije za debugging - CORRECT
+//        for (int i = 0; i < Math.min(5, popSize); i++) {
+//            System.out.println("Population member " + i + ": " + population.get(i));
+//        }
 
         while (!task.isStopCriterion()) {
             double fBestOld = bestSolution.getEval();
@@ -70,23 +92,23 @@ public class CEO extends NumberAlgorithm {
                     double[][] chaosPoints = generateEDM(parent, lb, ub, dim, k);
 
                     double mutChoice = RNG.nextDouble();
-                    if (task.getNumberOfIterations() <= 1) {
-                        System.out.println("DEBUG: iter " + task.getNumberOfIterations() +
-                                " mut_choice[" + k + "] = " + mutChoice);
-                    }
+//                    if (task.getNumberOfIterations() <= 1) {
+//                        System.out.println("DEBUG: iter " + task.getNumberOfIterations() +
+//                                " mut_choice[" + k + "] = " + mutChoice);
+//                    }
                     double[] r = new double[N];
                     for (int n = 0; n < N; n++) r[n] = RNG.nextDouble();
-                    for (int n = 0; n < 5; n++) {
-                        if (task.getNumberOfIterations() <= 1) {
-                            System.out.println("DEBUG: iter " + task.getNumberOfIterations() +
-                                    " r[" + k + "][" + n + "] = " + r[n]);
-                        }
-                    }
+//                    for (int n = 0; n < 5; n++) {
+//                        if (task.getNumberOfIterations() <= 1) {
+//                            System.out.println("DEBUG: iter " + task.getNumberOfIterations() +
+//                                    " r[" + k + "][" + n + "] = " + r[n]);
+//                        }
+//                    }
                     double CR = RNG.nextDouble();
-                    if (task.getNumberOfIterations() <= 1) {
-                        System.out.println("DEBUG: iter " + task.getNumberOfIterations() +
-                                " CR[" + k + "] = " + CR);
-                    }
+//                    if (task.getNumberOfIterations() <= 1) {
+//                        System.out.println("DEBUG: iter " + task.getNumberOfIterations() +
+//                                " CR[" + k + "] = " + CR);
+//                    }
 
                     List<NumberSolution<Double>> trials = new ArrayList<>();
                     for (int n = 0; n < N; n++) {
@@ -100,34 +122,18 @@ public class CEO extends NumberAlgorithm {
                         }
 
                         // Binomial Crossover
-//                        int jRand = RNG.nextInt(dim);
-//                        if (task.getNumberOfIterations() <= 1 && n < 5) {
-//                            System.out.println("DEBUG: iter " + task.getNumberOfIterations() +
-//                                    " j_rand[" + n + "] = " + jRand);
-//                        }
-//                        for (int d = 0; d < dim; d++) {
-//                            double rv = RNG.nextDouble();
-//                            if (task.getNumberOfIterations() <= 1 && n == 0 && d < 5) {
-//                                System.out.println("DEBUG: iter " + task.getNumberOfIterations() +
-//                                        " crossover_mask[0][" + d + "] = " + rv);
-//                            }
-//
-//                            if (!(rv < CR || d == jRand)) {
-//                                trialValues.set(d, parent.getValue(d));
-//                            }
-//                        }
                         // 1. Draw ALL mask RNGs first (Python order)
                         boolean[] mask = new boolean[dim];
                         for (int d = 0; d < dim; d++) {
                             double rv = RNG.nextDouble();
 
                             // DEBUG — match Python
-                            if (task.getNumberOfIterations() <= 1 && n == 0 && d < 5) {
-                                System.out.println(
-                                        "DEBUG: iter " + task.getNumberOfIterations() +
-                                                " crossover_mask[0][" + d + "] = " + rv
-                                );
-                            }
+//                            if (task.getNumberOfIterations() <= 1 && n == 0 && d < 5) {
+//                                System.out.println(
+//                                        "DEBUG: iter " + task.getNumberOfIterations() +
+//                                                " crossover_mask[0][" + d + "] = " + rv
+//                                );
+//                            }
 
                             mask[d] = rv < CR;
                         }
@@ -136,12 +142,12 @@ public class CEO extends NumberAlgorithm {
                         int jRand = RNG.nextInt(dim);
 
                         // DEBUG — match Python
-                        if (task.getNumberOfIterations() <= 1 && n < 5) {
-                            System.out.println(
-                                    "DEBUG: iter " + task.getNumberOfIterations() +
-                                            " j_rand[" + n + "] = " + jRand
-                            );
-                        }
+//                        if (task.getNumberOfIterations() <= 1 && n < 5) {
+//                            System.out.println(
+//                                    "DEBUG: iter " + task.getNumberOfIterations() +
+//                                            " j_rand[" + n + "] = " + jRand
+//                            );
+//                        }
 
                         // 3. Apply crossover logic (NO RNG here)
                         for (int d = 0; d < dim; d++) {
@@ -150,6 +156,7 @@ public class CEO extends NumberAlgorithm {
                             }
                         }
 
+                        if (task.isStopCriterion()) break;
                         NumberSolution<Double> trialSol = new NumberSolution<>(trialValues);
                         handleMirrorBounds(trialSol);
                         task.eval(trialSol);
@@ -161,9 +168,11 @@ public class CEO extends NumberAlgorithm {
                         NumberSolution<Double> localBestTrial = getBestFromList(trials);
                         if (task.problem.isFirstBetter(localBestTrial, parent)) {
                             population.set(pair[k], new NumberSolution<>(localBestTrial));
-                            // POMEMBNO: Takojšnje preverjanje, če je nova rešitev boljša od globalne
                             if (task.problem.isFirstBetter(localBestTrial, bestSolution)) {
                                 bestSolution = new NumberSolution<>(localBestTrial);
+                                if (isDebug) {
+                                    printDebug();
+                                }
                             }
                         }
                     }
@@ -172,13 +181,14 @@ public class CEO extends NumberAlgorithm {
 
             task.incrementNumberOfIterations();
 
-            // Izpis indeksa za debugging (če uporabljate PredefinedRandom)
-            printDebug();
+            // Izpis indeksa za debugging
+//            printDebug();
 
-            // Stagnacija (1:1 Python logika)
-            if (handleStagnation(fBestOld, bestSolution.getEval())) {
-                break;
-            }
+            // Stagnacija
+//            if (handleStagnation(fBestOld, bestSolution.getEval())) {
+//                System.out.println("Stopping due to stagnation.");
+//                break;
+//            }
         }
         return bestSolution;
     }
@@ -196,14 +206,11 @@ public class CEO extends NumberAlgorithm {
             population.add(s);
         }
         updateBestSolution(); // Postavi začetni globalni minimum
-
-        // Izpis prvih 5 članov populacije za debugging - CORRECT
-//        for (int i = 0; i < Math.min(5, popSize); i++) {
-//            System.out.println("Population member " + i + ": " + population.get(i));
-//        }
     }
 
     private void updateBestSolution() {
+        NumberSolution<Double> prevBestSolution = bestSolution;
+
         if (population.isEmpty()) return;
         bestSolution = population.get(0);
         for (int i = 1; i < population.size(); i++) {
@@ -211,16 +218,20 @@ public class CEO extends NumberAlgorithm {
                 bestSolution = population.get(i);
             }
         }
+
+        if (isDebug &&  prevBestSolution != bestSolution) {
+            printDebug();
+        }
     }
 
     private boolean handleStagnation(double oldBest, double newBest) {
-        if (task.getStopCriterion() != StopCriterion.STAGNATION) {
-            return false;
-        }
+//        if (task.getStopCriterion() != StopCriterion.STAGNATION) {
+//            return false;
+//        }
 
         if (Math.abs(oldBest - newBest) < 1e-8) {
             stagnationCounter++;
-            return stagnationCounter > 50;
+            return stagnationCounter >= 50;
         } else {
             stagnationCounter = 0;
             return false;

@@ -19,6 +19,10 @@ class CEO:
             for _ in range(Np)
         ]) * (Varmax - Varmin) + Varmin
 
+        # for i in range(min(5, Np)):
+        #     print(f"DEBUG: iter {self.t} population[{i}] = {self.Population[i, :]}")
+
+
         self.fit = self.fitness(self.Population)
         self.fBest = np.min(self.fit)
         self.index_best = np.argmin(self.fit)
@@ -63,18 +67,18 @@ class CEO:
         for i in range(N):
             for j in range(dim):
                 rv = self.rng.nextDouble()
-                if self.t == 1 or self.t == 2:
-                    if i < 1 and j < 5:
-                        print(f"DEBUG: iter {self.t} crossover_mask rng[{i},{j}] = {rv}")
+                # if self.t == 1 or self.t == 2:
+                #     if i < 1 and j < 5:
+                #         print(f"DEBUG: iter {self.t} crossover_mask rng[{i},{j}] = {rv}")
                 if rv < CR:
                     t[i, j] = True
 
         random_cols = []
         for i in range(N):
             jr = self.rng.nextInt(dim)
-            if self.t == 1 or self.t == 2:
-                if i < 5:
-                    print(f"DEBUG: iter {self.t} j_rand[{i}] = {jr}")
+            # if self.t == 1 or self.t == 2:
+            #     if i < 5:
+            #         print(f"DEBUG: iter {self.t} j_rand[{i}] = {jr}")
             random_cols.append(jr)
 
         random_cols = np.array(random_cols)
@@ -102,8 +106,8 @@ class CEO:
             oldfBest = self.fBest
 
             rand_num = self.rng.randomPermutation(self.Np)
-            if self.t == 1 or self.t == 2:
-                print(f"DEBUG: Iter {self.t} index_shuffle: {rand_num[:5]}")
+            # if self.t == 1 or self.t == 2:
+            #     print(f"DEBUG: Iter {self.t} index_shuffle: {rand_num[:5]}")
 
             ub = np.max(self.Population, axis=0)
             lb = np.min(self.Population, axis=0)
@@ -126,21 +130,21 @@ class CEO:
                     xy_chaos_dot = self.bound_constraint(xy_chaos_dot)
 
                     mut_choice_val = self.rng.nextDouble()
-                    if self.t == 1 or self.t == 2:
-                        print(f"DEBUG: iter {self.t} mut_choice[{k}] = {mut_choice_val}")
+                    # if self.t == 1 or self.t == 2:
+                    #     print(f"DEBUG: iter {self.t} mut_choice[{k}] = {mut_choice_val}")
 
                     r = []
                     for n in range(self.N):
                         rv = self.rng.nextDouble()
-                        if self.t == 1 or self.t == 2:
-                            if n < 5:
-                                print(f"DEBUG: iter {self.t} r[{k}][{n}] = {rv}")
+                        # if self.t == 1 or self.t == 2:
+                        #     if n < 5:
+                        #         print(f"DEBUG: iter {self.t} r[{k}][{n}] = {rv}")
                         r.append([rv])
                     r = np.array(r)
 
                     CR = self.rng.nextDouble()
-                    if self.t == 1 or self.t == 2:
-                        print(f"DEBUG: iter {self.t} CR[{k}] = {CR}")
+                    # if self.t == 1 or self.t == 2:
+                    #     print(f"DEBUG: iter {self.t} CR[{k}] = {CR}")
 
                     if mut_choice_val < 0.5:
                         xy_hat = xy[k, :] + r * (xy_chaos_dot - xy[k, :])

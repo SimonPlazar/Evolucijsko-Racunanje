@@ -14,13 +14,19 @@ class PredefinedRandom:
     # -------------------------------------------------
     # Core
     # -------------------------------------------------
+    # def _next(self):
+    #     if self.index >= self.size:
+    #         raise RuntimeError(
+    #             f"RNG exhausted at index {self.index} (size={self.size})"
+    #         )
+    #     val = self.numbers[self.index]
+    #     self.index += 1
+    #     return val
     def _next(self):
-        if self.index >= self.size:
-            raise RuntimeError(
-                f"RNG exhausted at index {self.index} (size={self.size})"
-            )
+        # if not self.numbers:
+        #     raise RuntimeError("RNG has no predefined numbers")
         val = self.numbers[self.index]
-        self.index += 1
+        self.index = (self.index + 1) % len(self.numbers)
         return val
 
     # -------------------------------------------------

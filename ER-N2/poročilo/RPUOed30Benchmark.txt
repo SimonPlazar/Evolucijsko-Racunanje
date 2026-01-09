@@ -1,0 +1,1609 @@
+02:00:52 pm: Executing ':org.example.RPUOed30Benchmark.main()'…
+
+
+> Configure project :EARS
+Project :EARS => no module-info.java found
+
+> Task :EARS:compileKotlin UP-TO-DATE
+> Task :EARS:compileJava UP-TO-DATE
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :EARS:processResources UP-TO-DATE
+> Task :EARS:classes UP-TO-DATE
+> Task :EARS:jar UP-TO-DATE
+
+> Task :org.example.RPUOed30Benchmark.main()
+Current run: 1
+Current problem: Ackley
+ABC: 0.251
+GWO: 0.539
+TLBO: 0.631
+RS: 0.15
+JADE: 0.293
+CEO: 0.408
+Current problem: Griewank
+ABC: 0.142
+GWO: 0.435
+TLBO: 0.61
+RS: 0.14
+JADE: 0.369
+CEO: 0.368
+Current problem: Rastrigin
+ABC: 0.077
+GWO: 0.379
+TLBO: 0.481
+RS: 0.112
+JADE: 0.19
+CEO: 0.25
+Current problem: RosenbrockDeJong2
+ABC: 0.051
+GWO: 0.354
+TLBO: 0.444
+RS: 0.087
+JADE: 0.195
+CEO: 0.217
+Current problem: Schwefel226
+ABC: 0.099
+GWO: 0.385
+TLBO: 0.462
+RS: 0.12
+JADE: 0.183
+CEO: 0.257
+Current problem: SchwefelRigle(30)
+ABC: 0.088
+GWO: 0.393
+TLBO: 0.465
+RS: 0.125
+JADE: 0.21
+CEO: 0.269
+Current problem: Sphere
+ABC: 0.043
+GWO: 0.354
+TLBO: 0.515
+RS: 0.083
+JADE: 0.168
+CEO: 0.214
+Current run: 2
+Current problem: Ackley
+ABC: 0.072
+GWO: 0.374
+TLBO: 0.44
+RS: 0.115
+JADE: 0.191
+CEO: 0.24
+Current problem: Griewank
+ABC: 0.097
+GWO: 0.395
+TLBO: 0.483
+RS: 0.137
+JADE: 0.214
+CEO: 0.261
+Current problem: Rastrigin
+ABC: 0.072
+GWO: 0.375
+TLBO: 0.507
+RS: 0.114
+JADE: 0.18
+CEO: 0.236
+Current problem: RosenbrockDeJong2
+ABC: 0.043
+GWO: 0.353
+TLBO: 0.4
+RS: 0.084
+JADE: 0.163
+CEO: 0.212
+Current problem: Schwefel226
+ABC: 0.077
+GWO: 0.384
+TLBO: 0.429
+RS: 0.119
+JADE: 0.187
+CEO: 0.246
+Current problem: SchwefelRigle(30)
+ABC: 0.086
+GWO: 0.392
+TLBO: 0.448
+RS: 0.126
+JADE: 0.213
+CEO: 0.251
+Current problem: Sphere
+ABC: 0.042
+GWO: 0.353
+TLBO: 0.502
+RS: 0.084
+JADE: 0.167
+CEO: 0.214
+Current run: 3
+Current problem: Ackley
+ABC: 0.071
+GWO: 0.376
+TLBO: 0.474
+RS: 0.117
+JADE: 0.188
+CEO: 0.24
+Current problem: Griewank
+ABC: 0.099
+GWO: 0.397
+TLBO: 0.548
+RS: 0.137
+JADE: 0.206
+CEO: 0.262
+Current problem: Rastrigin
+ABC: 0.074
+GWO: 0.374
+TLBO: 0.493
+RS: 0.114
+JADE: 0.183
+CEO: 0.238
+Current problem: RosenbrockDeJong2
+ABC: 0.047
+GWO: 0.355
+TLBO: 0.469
+RS: 0.085
+JADE: 0.169
+CEO: 0.211
+Current problem: Schwefel226
+ABC: 0.071
+GWO: 0.386
+TLBO: 0.462
+RS: 0.119
+JADE: 0.19
+CEO: 0.245
+Current problem: SchwefelRigle(30)
+ABC: 0.083
+GWO: 0.391
+TLBO: 0.445
+RS: 0.126
+JADE: 0.205
+CEO: 0.253
+Current problem: Sphere
+ABC: 0.044
+GWO: 0.355
+TLBO: 0.51
+RS: 0.086
+JADE: 0.169
+CEO: 0.215
+Current run: 4
+Current problem: Ackley
+ABC: 0.07
+GWO: 0.379
+TLBO: 0.484
+RS: 0.114
+JADE: 0.189
+CEO: 0.244
+Current problem: Griewank
+ABC: 0.096
+GWO: 0.397
+TLBO: 0.477
+RS: 0.14
+JADE: 0.208
+CEO: 0.261
+Current problem: Rastrigin
+ABC: 0.072
+GWO: 0.374
+TLBO: 0.476
+RS: 0.114
+JADE: 0.175
+CEO: 0.241
+Current problem: RosenbrockDeJong2
+ABC: 0.042
+GWO: 0.352
+TLBO: 0.4
+RS: 0.083
+JADE: 0.16
+CEO: 0.211
+Current problem: Schwefel226
+ABC: 0.072
+GWO: 0.395
+TLBO: 0.461
+RS: 0.119
+JADE: 0.188
+CEO: 0.248
+Current problem: SchwefelRigle(30)
+ABC: 0.083
+GWO: 0.393
+TLBO: 0.471
+RS: 0.126
+JADE: 0.21
+CEO: 0.247
+Current problem: Sphere
+ABC: 0.044
+GWO: 0.351
+TLBO: 0.518
+RS: 0.086
+JADE: 0.171
+CEO: 0.21
+Current run: 5
+Current problem: Ackley
+ABC: 0.073
+GWO: 0.376
+TLBO: 0.502
+RS: 0.115
+JADE: 0.192
+CEO: 0.239
+Current problem: Griewank
+ABC: 0.096
+GWO: 0.399
+TLBO: 0.524
+RS: 0.138
+JADE: 0.214
+CEO: 0.26
+Current problem: Rastrigin
+ABC: 0.072
+GWO: 0.373
+TLBO: 0.482
+RS: 0.115
+JADE: 0.184
+CEO: 0.241
+Current problem: RosenbrockDeJong2
+ABC: 0.044
+GWO: 0.349
+TLBO: 0.413
+RS: 0.085
+JADE: 0.156
+CEO: 0.212
+Current problem: Schwefel226
+ABC: 0.072
+GWO: 0.386
+TLBO: 0.5
+RS: 0.117
+JADE: 0.187
+CEO: 0.286
+Current problem: SchwefelRigle(30)
+ABC: 0.094
+GWO: 0.423
+TLBO: 0.462
+RS: 0.125
+JADE: 0.207
+CEO: 0.25
+Current problem: Sphere
+ABC: 0.04
+GWO: 0.357
+TLBO: 0.516
+RS: 0.085
+JADE: 0.147
+CEO: 0.211
+Current run: 6
+Current problem: Ackley
+ABC: 0.069
+GWO: 0.387
+TLBO: 0.48
+RS: 0.117
+JADE: 0.185
+CEO: 0.244
+Current problem: Griewank
+ABC: 0.096
+GWO: 0.398
+TLBO: 0.472
+RS: 0.138
+JADE: 0.203
+CEO: 0.263
+Current problem: Rastrigin
+ABC: 0.076
+GWO: 0.371
+TLBO: 0.474
+RS: 0.114
+JADE: 0.178
+CEO: 0.239
+Current problem: RosenbrockDeJong2
+ABC: 0.045
+GWO: 0.351
+TLBO: 0.367
+RS: 0.085
+JADE: 0.145
+CEO: 0.243
+Current problem: Schwefel226
+ABC: 0.096
+GWO: 0.475
+TLBO: 0.511
+RS: 0.13
+JADE: 0.201
+CEO: 0.245
+Current problem: SchwefelRigle(30)
+ABC: 0.086
+GWO: 0.39
+TLBO: 0.457
+RS: 0.124
+JADE: 0.206
+CEO: 0.25
+Current problem: Sphere
+ABC: 0.042
+GWO: 0.356
+TLBO: 0.517
+RS: 0.085
+JADE: 0.17
+CEO: 0.21
+Current run: 7
+Current problem: Ackley
+ABC: 0.069
+GWO: 0.38
+TLBO: 0.501
+RS: 0.112
+JADE: 0.19
+CEO: 0.239
+Current problem: Griewank
+ABC: 0.097
+GWO: 0.401
+TLBO: 0.48
+RS: 0.138
+JADE: 0.206
+CEO: 0.263
+Current problem: Rastrigin
+ABC: 0.07
+GWO: 0.375
+TLBO: 0.482
+RS: 0.113
+JADE: 0.182
+CEO: 0.237
+Current problem: RosenbrockDeJong2
+ABC: 0.045
+GWO: 0.352
+TLBO: 0.401
+RS: 0.085
+JADE: 0.166
+CEO: 0.211
+Current problem: Schwefel226
+ABC: 0.073
+GWO: 0.383
+TLBO: 0.438
+RS: 0.122
+JADE: 0.188
+CEO: 0.243
+Current problem: SchwefelRigle(30)
+ABC: 0.084
+GWO: 0.39
+TLBO: 0.453
+RS: 0.124
+JADE: 0.209
+CEO: 0.251
+Current problem: Sphere
+ABC: 0.041
+GWO: 0.352
+TLBO: 0.504
+RS: 0.084
+JADE: 0.168
+CEO: 0.211
+Current run: 8
+Current problem: Ackley
+ABC: 0.068
+GWO: 0.375
+TLBO: 0.476
+RS: 0.114
+JADE: 0.187
+CEO: 0.241
+Current problem: Griewank
+ABC: 0.098
+GWO: 0.395
+TLBO: 0.507
+RS: 0.138
+JADE: 0.214
+CEO: 0.26
+Current problem: Rastrigin
+ABC: 0.072
+GWO: 0.373
+TLBO: 0.454
+RS: 0.112
+JADE: 0.179
+CEO: 0.237
+Current problem: RosenbrockDeJong2
+ABC: 0.045
+GWO: 0.352
+TLBO: 0.421
+RS: 0.085
+JADE: 0.168
+CEO: 0.228
+Current problem: Schwefel226
+ABC: 0.075
+GWO: 0.392
+TLBO: 0.438
+RS: 0.12
+JADE: 0.189
+CEO: 0.247
+Current problem: SchwefelRigle(30)
+ABC: 0.086
+GWO: 0.391
+TLBO: 0.439
+RS: 0.127
+JADE: 0.209
+CEO: 0.249
+Current problem: Sphere
+ABC: 0.039
+GWO: 0.353
+TLBO: 0.492
+RS: 0.086
+JADE: 0.169
+CEO: 0.211
+Current run: 9
+Current problem: Ackley
+ABC: 0.068
+GWO: 0.385
+TLBO: 0.458
+RS: 0.116
+JADE: 0.192
+CEO: 0.239
+Current problem: Griewank
+ABC: 0.098
+GWO: 0.395
+TLBO: 0.501
+RS: 0.137
+JADE: 0.204
+CEO: 0.259
+Current problem: Rastrigin
+ABC: 0.073
+GWO: 0.378
+TLBO: 0.476
+RS: 0.113
+JADE: 0.18
+CEO: 0.238
+Current problem: RosenbrockDeJong2
+ABC: 0.044
+GWO: 0.349
+TLBO: 0.402
+RS: 0.085
+JADE: 0.162
+CEO: 0.211
+Current problem: Schwefel226
+ABC: 0.079
+GWO: 0.385
+TLBO: 0.501
+RS: 0.117
+JADE: 0.188
+CEO: 0.245
+Current problem: SchwefelRigle(30)
+ABC: 0.085
+GWO: 0.392
+TLBO: 0.457
+RS: 0.126
+JADE: 0.207
+CEO: 0.251
+Current problem: Sphere
+ABC: 0.039
+GWO: 0.354
+TLBO: 0.506
+RS: 0.086
+JADE: 0.168
+CEO: 0.209
+Current run: 10
+Current problem: Ackley
+ABC: 0.07
+GWO: 0.387
+TLBO: 0.465
+RS: 0.116
+JADE: 0.191
+CEO: 0.241
+Current problem: Griewank
+ABC: 0.095
+GWO: 0.399
+TLBO: 0.505
+RS: 0.137
+JADE: 0.214
+CEO: 0.26
+Current problem: Rastrigin
+ABC: 0.073
+GWO: 0.372
+TLBO: 0.477
+RS: 0.113
+JADE: 0.181
+CEO: 0.244
+Current problem: RosenbrockDeJong2
+ABC: 0.044
+GWO: 0.383
+TLBO: 0.464
+RS: 0.087
+JADE: 0.162
+CEO: 0.212
+Current problem: Schwefel226
+ABC: 0.072
+GWO: 0.387
+TLBO: 0.459
+RS: 0.117
+JADE: 0.184
+CEO: 0.246
+Current problem: SchwefelRigle(30)
+ABC: 0.086
+GWO: 0.389
+TLBO: 0.446
+RS: 0.124
+JADE: 0.205
+CEO: 0.252
+Current problem: Sphere
+ABC: 0.041
+GWO: 0.352
+TLBO: 0.504
+RS: 0.084
+JADE: 0.17
+CEO: 0.205
+win of GWO (0, feasible=true) against JADE (47.06, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against CEO (802.78, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against TLBO (1,002.303, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against ABC (31,924.523, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against RS (40,083.528, feasible=true) for SchwefelRigle(30)
+win of JADE (47.06, feasible=true) against CEO (802.78, feasible=true) for SchwefelRigle(30)
+win of JADE (47.06, feasible=true) against TLBO (1,002.303, feasible=true) for SchwefelRigle(30)
+win of JADE (47.06, feasible=true) against ABC (31,924.523, feasible=true) for SchwefelRigle(30)
+win of JADE (47.06, feasible=true) against RS (40,083.528, feasible=true) for SchwefelRigle(30)
+win of CEO (802.78, feasible=true) against TLBO (1,002.303, feasible=true) for SchwefelRigle(30)
+win of CEO (802.78, feasible=true) against ABC (31,924.523, feasible=true) for SchwefelRigle(30)
+win of CEO (802.78, feasible=true) against RS (40,083.528, feasible=true) for SchwefelRigle(30)
+win of TLBO (1,002.303, feasible=true) against ABC (31,924.523, feasible=true) for SchwefelRigle(30)
+win of TLBO (1,002.303, feasible=true) against RS (40,083.528, feasible=true) for SchwefelRigle(30)
+win of ABC (31,924.523, feasible=true) against RS (40,083.528, feasible=true) for SchwefelRigle(30)
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against CEO (7.96, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against RS (310.351, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against CEO (7.96, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against RS (310.351, feasible=true) for Rastrigin
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against CEO (7.96, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against RS (310.351, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against CEO (7.96, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against RS (310.351, feasible=true) for Rastrigin
+win of CEO (7.96, feasible=true) against RS (310.351, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against ABC (0.151, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against CEO (3.987, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against GWO (28.779, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against TLBO (28.884, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against RS (267,634.289, feasible=true) for RosenbrockDeJong2
+win of ABC (0.151, feasible=true) against CEO (3.987, feasible=true) for RosenbrockDeJong2
+win of ABC (0.151, feasible=true) against GWO (28.779, feasible=true) for RosenbrockDeJong2
+win of ABC (0.151, feasible=true) against TLBO (28.884, feasible=true) for RosenbrockDeJong2
+win of ABC (0.151, feasible=true) against RS (267,634.289, feasible=true) for RosenbrockDeJong2
+win of CEO (3.987, feasible=true) against GWO (28.779, feasible=true) for RosenbrockDeJong2
+win of CEO (3.987, feasible=true) against TLBO (28.884, feasible=true) for RosenbrockDeJong2
+win of CEO (3.987, feasible=true) against RS (267,634.289, feasible=true) for RosenbrockDeJong2
+win of GWO (28.779, feasible=true) against TLBO (28.884, feasible=true) for RosenbrockDeJong2
+win of GWO (28.779, feasible=true) against RS (267,634.289, feasible=true) for RosenbrockDeJong2
+win of TLBO (28.884, feasible=true) against RS (267,634.289, feasible=true) for RosenbrockDeJong2
+win of ABC (-12,451.048, feasible=true) against CEO (-12,332.61, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against JADE (-11,740.418, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against TLBO (-4,879.936, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against RS (-4,485.214, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+win of CEO (-12,332.61, feasible=true) against JADE (-11,740.418, feasible=true) for Schwefel226
+win of CEO (-12,332.61, feasible=true) against TLBO (-4,879.936, feasible=true) for Schwefel226
+win of CEO (-12,332.61, feasible=true) against RS (-4,485.214, feasible=true) for Schwefel226
+win of CEO (-12,332.61, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+win of JADE (-11,740.418, feasible=true) against TLBO (-4,879.936, feasible=true) for Schwefel226
+win of JADE (-11,740.418, feasible=true) against RS (-4,485.214, feasible=true) for Schwefel226
+win of JADE (-11,740.418, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+win of TLBO (-4,879.936, feasible=true) against RS (-4,485.214, feasible=true) for Schwefel226
+win of TLBO (-4,879.936, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+win of RS (-4,485.214, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+draw of TLBO (0, feasible=true) against GWO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of TLBO (0, feasible=true) against RS (33,974.377, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of GWO (0, feasible=true) against RS (33,974.377, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of JADE (0, feasible=true) against RS (33,974.377, feasible=true) for Sphere
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of CEO (0, feasible=true) against RS (33,974.377, feasible=true) for Sphere
+win of ABC (0, feasible=true) against RS (33,974.377, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of GWO (0, feasible=true) against RS (19.511, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of TLBO (0, feasible=true) against RS (19.511, feasible=true) for Ackley
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of JADE (0, feasible=true) against RS (19.511, feasible=true) for Ackley
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of CEO (0, feasible=true) against RS (19.511, feasible=true) for Ackley
+win of ABC (0, feasible=true) against RS (19.511, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of GWO (0, feasible=true) against RS (339.075, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of TLBO (0, feasible=true) against RS (339.075, feasible=true) for Griewank
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of JADE (0, feasible=true) against RS (339.075, feasible=true) for Griewank
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of CEO (0, feasible=true) against RS (339.075, feasible=true) for Griewank
+win of ABC (0, feasible=true) against RS (339.075, feasible=true) for Griewank
+win of GWO (0, feasible=true) against JADE (47.677, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against CEO (726.294, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against TLBO (18,730.772, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against ABC (34,249.975, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against RS (47,401.937, feasible=true) for SchwefelRigle(30)
+win of JADE (47.677, feasible=true) against CEO (726.294, feasible=true) for SchwefelRigle(30)
+win of JADE (47.677, feasible=true) against TLBO (18,730.772, feasible=true) for SchwefelRigle(30)
+win of JADE (47.677, feasible=true) against ABC (34,249.975, feasible=true) for SchwefelRigle(30)
+win of JADE (47.677, feasible=true) against RS (47,401.937, feasible=true) for SchwefelRigle(30)
+win of CEO (726.294, feasible=true) against TLBO (18,730.772, feasible=true) for SchwefelRigle(30)
+win of CEO (726.294, feasible=true) against ABC (34,249.975, feasible=true) for SchwefelRigle(30)
+win of CEO (726.294, feasible=true) against RS (47,401.937, feasible=true) for SchwefelRigle(30)
+win of TLBO (18,730.772, feasible=true) against ABC (34,249.975, feasible=true) for SchwefelRigle(30)
+win of TLBO (18,730.772, feasible=true) against RS (47,401.937, feasible=true) for SchwefelRigle(30)
+win of ABC (34,249.975, feasible=true) against RS (47,401.937, feasible=true) for SchwefelRigle(30)
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against CEO (9.95, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against RS (322.394, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against CEO (9.95, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against RS (322.394, feasible=true) for Rastrigin
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against CEO (9.95, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against RS (322.394, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against CEO (9.95, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against RS (322.394, feasible=true) for Rastrigin
+win of CEO (9.95, feasible=true) against RS (322.394, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against ABC (0.02, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against CEO (0.53, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against TLBO (28.875, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against RS (410,784.222, feasible=true) for RosenbrockDeJong2
+win of ABC (0.02, feasible=true) against CEO (0.53, feasible=true) for RosenbrockDeJong2
+win of ABC (0.02, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of ABC (0.02, feasible=true) against TLBO (28.875, feasible=true) for RosenbrockDeJong2
+win of ABC (0.02, feasible=true) against RS (410,784.222, feasible=true) for RosenbrockDeJong2
+win of CEO (0.53, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of CEO (0.53, feasible=true) against TLBO (28.875, feasible=true) for RosenbrockDeJong2
+win of CEO (0.53, feasible=true) against RS (410,784.222, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against TLBO (28.875, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against RS (410,784.222, feasible=true) for RosenbrockDeJong2
+win of TLBO (28.875, feasible=true) against RS (410,784.222, feasible=true) for RosenbrockDeJong2
+win of ABC (-12,497.844, feasible=true) against JADE (-12,332.61, feasible=true) for Schwefel226
+win of ABC (-12,497.844, feasible=true) against CEO (-12,095.733, feasible=true) for Schwefel226
+win of ABC (-12,497.844, feasible=true) against TLBO (-4,895.331, feasible=true) for Schwefel226
+win of ABC (-12,497.844, feasible=true) against RS (-4,551.669, feasible=true) for Schwefel226
+win of ABC (-12,497.844, feasible=true) against GWO (-601.089, feasible=true) for Schwefel226
+win of JADE (-12,332.61, feasible=true) against CEO (-12,095.733, feasible=true) for Schwefel226
+win of JADE (-12,332.61, feasible=true) against TLBO (-4,895.331, feasible=true) for Schwefel226
+win of JADE (-12,332.61, feasible=true) against RS (-4,551.669, feasible=true) for Schwefel226
+win of JADE (-12,332.61, feasible=true) against GWO (-601.089, feasible=true) for Schwefel226
+win of CEO (-12,095.733, feasible=true) against TLBO (-4,895.331, feasible=true) for Schwefel226
+win of CEO (-12,095.733, feasible=true) against RS (-4,551.669, feasible=true) for Schwefel226
+win of CEO (-12,095.733, feasible=true) against GWO (-601.089, feasible=true) for Schwefel226
+win of TLBO (-4,895.331, feasible=true) against RS (-4,551.669, feasible=true) for Schwefel226
+win of TLBO (-4,895.331, feasible=true) against GWO (-601.089, feasible=true) for Schwefel226
+win of RS (-4,551.669, feasible=true) against GWO (-601.089, feasible=true) for Schwefel226
+draw of TLBO (0, feasible=true) against GWO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of TLBO (0, feasible=true) against RS (40,993.699, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of GWO (0, feasible=true) against RS (40,993.699, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of JADE (0, feasible=true) against RS (40,993.699, feasible=true) for Sphere
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of CEO (0, feasible=true) against RS (40,993.699, feasible=true) for Sphere
+win of ABC (0, feasible=true) against RS (40,993.699, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of GWO (0, feasible=true) against JADE (1.155, feasible=true) for Ackley
+win of GWO (0, feasible=true) against RS (19.728, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of TLBO (0, feasible=true) against JADE (1.155, feasible=true) for Ackley
+win of TLBO (0, feasible=true) against RS (19.728, feasible=true) for Ackley
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of CEO (0, feasible=true) against JADE (1.155, feasible=true) for Ackley
+win of CEO (0, feasible=true) against RS (19.728, feasible=true) for Ackley
+win of ABC (0, feasible=true) against JADE (1.155, feasible=true) for Ackley
+win of ABC (0, feasible=true) against RS (19.728, feasible=true) for Ackley
+win of JADE (1.155, feasible=true) against RS (19.728, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of GWO (0, feasible=true) against RS (327.448, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of TLBO (0, feasible=true) against RS (327.448, feasible=true) for Griewank
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of JADE (0, feasible=true) against RS (327.448, feasible=true) for Griewank
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of CEO (0, feasible=true) against RS (327.448, feasible=true) for Griewank
+win of ABC (0, feasible=true) against RS (327.448, feasible=true) for Griewank
+win of GWO (0, feasible=true) against JADE (109.145, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against CEO (735.451, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against TLBO (5,527.305, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against ABC (30,555.191, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against RS (41,862.88, feasible=true) for SchwefelRigle(30)
+win of JADE (109.145, feasible=true) against CEO (735.451, feasible=true) for SchwefelRigle(30)
+win of JADE (109.145, feasible=true) against TLBO (5,527.305, feasible=true) for SchwefelRigle(30)
+win of JADE (109.145, feasible=true) against ABC (30,555.191, feasible=true) for SchwefelRigle(30)
+win of JADE (109.145, feasible=true) against RS (41,862.88, feasible=true) for SchwefelRigle(30)
+win of CEO (735.451, feasible=true) against TLBO (5,527.305, feasible=true) for SchwefelRigle(30)
+win of CEO (735.451, feasible=true) against ABC (30,555.191, feasible=true) for SchwefelRigle(30)
+win of CEO (735.451, feasible=true) against RS (41,862.88, feasible=true) for SchwefelRigle(30)
+win of TLBO (5,527.305, feasible=true) against ABC (30,555.191, feasible=true) for SchwefelRigle(30)
+win of TLBO (5,527.305, feasible=true) against RS (41,862.88, feasible=true) for SchwefelRigle(30)
+win of ABC (30,555.191, feasible=true) against RS (41,862.88, feasible=true) for SchwefelRigle(30)
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against CEO (10.945, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against RS (320.789, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against CEO (10.945, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against RS (320.789, feasible=true) for Rastrigin
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against CEO (10.945, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against RS (320.789, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against CEO (10.945, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against RS (320.789, feasible=true) for Rastrigin
+win of CEO (10.945, feasible=true) against RS (320.789, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against CEO (0.004, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against ABC (0.007, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against TLBO (28.85, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against RS (341,344.596, feasible=true) for RosenbrockDeJong2
+win of CEO (0.004, feasible=true) against ABC (0.007, feasible=true) for RosenbrockDeJong2
+win of CEO (0.004, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of CEO (0.004, feasible=true) against TLBO (28.85, feasible=true) for RosenbrockDeJong2
+win of CEO (0.004, feasible=true) against RS (341,344.596, feasible=true) for RosenbrockDeJong2
+win of ABC (0.007, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of ABC (0.007, feasible=true) against TLBO (28.85, feasible=true) for RosenbrockDeJong2
+win of ABC (0.007, feasible=true) against RS (341,344.596, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against TLBO (28.85, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against RS (341,344.596, feasible=true) for RosenbrockDeJong2
+win of TLBO (28.85, feasible=true) against RS (341,344.596, feasible=true) for RosenbrockDeJong2
+win of ABC (-12,451.048, feasible=true) against CEO (-12,214.172, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against JADE (-11,383.586, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against TLBO (-5,981.504, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against RS (-4,464.888, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+win of CEO (-12,214.172, feasible=true) against JADE (-11,383.586, feasible=true) for Schwefel226
+win of CEO (-12,214.172, feasible=true) against TLBO (-5,981.504, feasible=true) for Schwefel226
+win of CEO (-12,214.172, feasible=true) against RS (-4,464.888, feasible=true) for Schwefel226
+win of CEO (-12,214.172, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+win of JADE (-11,383.586, feasible=true) against TLBO (-5,981.504, feasible=true) for Schwefel226
+win of JADE (-11,383.586, feasible=true) against RS (-4,464.888, feasible=true) for Schwefel226
+win of JADE (-11,383.586, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+win of TLBO (-5,981.504, feasible=true) against RS (-4,464.888, feasible=true) for Schwefel226
+win of TLBO (-5,981.504, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+win of RS (-4,464.888, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+draw of TLBO (0, feasible=true) against GWO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of TLBO (0, feasible=true) against RS (35,578.641, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of GWO (0, feasible=true) against RS (35,578.641, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of JADE (0, feasible=true) against RS (35,578.641, feasible=true) for Sphere
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of CEO (0, feasible=true) against RS (35,578.641, feasible=true) for Sphere
+win of ABC (0, feasible=true) against RS (35,578.641, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of GWO (0, feasible=true) against JADE (1.34, feasible=true) for Ackley
+win of GWO (0, feasible=true) against RS (19.735, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of TLBO (0, feasible=true) against JADE (1.34, feasible=true) for Ackley
+win of TLBO (0, feasible=true) against RS (19.735, feasible=true) for Ackley
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of CEO (0, feasible=true) against JADE (1.34, feasible=true) for Ackley
+win of CEO (0, feasible=true) against RS (19.735, feasible=true) for Ackley
+win of ABC (0, feasible=true) against JADE (1.34, feasible=true) for Ackley
+win of ABC (0, feasible=true) against RS (19.735, feasible=true) for Ackley
+win of JADE (1.34, feasible=true) against RS (19.735, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of GWO (0, feasible=true) against RS (339.117, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of TLBO (0, feasible=true) against RS (339.117, feasible=true) for Griewank
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of JADE (0, feasible=true) against RS (339.117, feasible=true) for Griewank
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of CEO (0, feasible=true) against RS (339.117, feasible=true) for Griewank
+win of ABC (0, feasible=true) against RS (339.117, feasible=true) for Griewank
+win of GWO (0, feasible=true) against JADE (85.399, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against CEO (781.223, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against TLBO (966.405, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against ABC (18,878.509, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against RS (69,716.839, feasible=true) for SchwefelRigle(30)
+win of JADE (85.399, feasible=true) against CEO (781.223, feasible=true) for SchwefelRigle(30)
+win of JADE (85.399, feasible=true) against TLBO (966.405, feasible=true) for SchwefelRigle(30)
+win of JADE (85.399, feasible=true) against ABC (18,878.509, feasible=true) for SchwefelRigle(30)
+win of JADE (85.399, feasible=true) against RS (69,716.839, feasible=true) for SchwefelRigle(30)
+win of CEO (781.223, feasible=true) against TLBO (966.405, feasible=true) for SchwefelRigle(30)
+win of CEO (781.223, feasible=true) against ABC (18,878.509, feasible=true) for SchwefelRigle(30)
+win of CEO (781.223, feasible=true) against RS (69,716.839, feasible=true) for SchwefelRigle(30)
+win of TLBO (966.405, feasible=true) against ABC (18,878.509, feasible=true) for SchwefelRigle(30)
+win of TLBO (966.405, feasible=true) against RS (69,716.839, feasible=true) for SchwefelRigle(30)
+win of ABC (18,878.509, feasible=true) against RS (69,716.839, feasible=true) for SchwefelRigle(30)
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against CEO (8.955, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against RS (327.276, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against CEO (8.955, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against RS (327.276, feasible=true) for Rastrigin
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against CEO (8.955, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against RS (327.276, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against CEO (8.955, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against RS (327.276, feasible=true) for Rastrigin
+win of CEO (8.955, feasible=true) against RS (327.276, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against CEO (0, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against ABC (0.024, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against TLBO (28.858, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against RS (267,073.565, feasible=true) for RosenbrockDeJong2
+win of CEO (0, feasible=true) against ABC (0.024, feasible=true) for RosenbrockDeJong2
+win of CEO (0, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of CEO (0, feasible=true) against TLBO (28.858, feasible=true) for RosenbrockDeJong2
+win of CEO (0, feasible=true) against RS (267,073.565, feasible=true) for RosenbrockDeJong2
+win of ABC (0.024, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of ABC (0.024, feasible=true) against TLBO (28.858, feasible=true) for RosenbrockDeJong2
+win of ABC (0.024, feasible=true) against RS (267,073.565, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against TLBO (28.858, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against RS (267,073.565, feasible=true) for RosenbrockDeJong2
+win of TLBO (28.858, feasible=true) against RS (267,073.565, feasible=true) for RosenbrockDeJong2
+win of ABC (-12,569.487, feasible=true) against JADE (-12,332.61, feasible=true) for Schwefel226
+win of ABC (-12,569.487, feasible=true) against CEO (-12,214.172, feasible=true) for Schwefel226
+win of ABC (-12,569.487, feasible=true) against TLBO (-4,886.649, feasible=true) for Schwefel226
+win of ABC (-12,569.487, feasible=true) against RS (-4,707.093, feasible=true) for Schwefel226
+win of ABC (-12,569.487, feasible=true) against GWO (-482.618, feasible=true) for Schwefel226
+win of JADE (-12,332.61, feasible=true) against CEO (-12,214.172, feasible=true) for Schwefel226
+win of JADE (-12,332.61, feasible=true) against TLBO (-4,886.649, feasible=true) for Schwefel226
+win of JADE (-12,332.61, feasible=true) against RS (-4,707.093, feasible=true) for Schwefel226
+win of JADE (-12,332.61, feasible=true) against GWO (-482.618, feasible=true) for Schwefel226
+win of CEO (-12,214.172, feasible=true) against TLBO (-4,886.649, feasible=true) for Schwefel226
+win of CEO (-12,214.172, feasible=true) against RS (-4,707.093, feasible=true) for Schwefel226
+win of CEO (-12,214.172, feasible=true) against GWO (-482.618, feasible=true) for Schwefel226
+win of TLBO (-4,886.649, feasible=true) against RS (-4,707.093, feasible=true) for Schwefel226
+win of TLBO (-4,886.649, feasible=true) against GWO (-482.618, feasible=true) for Schwefel226
+win of RS (-4,707.093, feasible=true) against GWO (-482.618, feasible=true) for Schwefel226
+draw of TLBO (0, feasible=true) against GWO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of TLBO (0, feasible=true) against RS (35,446.789, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of GWO (0, feasible=true) against RS (35,446.789, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of JADE (0, feasible=true) against RS (35,446.789, feasible=true) for Sphere
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of CEO (0, feasible=true) against RS (35,446.789, feasible=true) for Sphere
+win of ABC (0, feasible=true) against RS (35,446.789, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of GWO (0, feasible=true) against JADE (2.013, feasible=true) for Ackley
+win of GWO (0, feasible=true) against RS (19.83, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of TLBO (0, feasible=true) against JADE (2.013, feasible=true) for Ackley
+win of TLBO (0, feasible=true) against RS (19.83, feasible=true) for Ackley
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of CEO (0, feasible=true) against JADE (2.013, feasible=true) for Ackley
+win of CEO (0, feasible=true) against RS (19.83, feasible=true) for Ackley
+win of ABC (0, feasible=true) against JADE (2.013, feasible=true) for Ackley
+win of ABC (0, feasible=true) against RS (19.83, feasible=true) for Ackley
+win of JADE (2.013, feasible=true) against RS (19.83, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of GWO (0, feasible=true) against CEO (0.01, feasible=true) for Griewank
+win of GWO (0, feasible=true) against RS (343.841, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of TLBO (0, feasible=true) against CEO (0.01, feasible=true) for Griewank
+win of TLBO (0, feasible=true) against RS (343.841, feasible=true) for Griewank
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of JADE (0, feasible=true) against CEO (0.01, feasible=true) for Griewank
+win of JADE (0, feasible=true) against RS (343.841, feasible=true) for Griewank
+win of ABC (0, feasible=true) against CEO (0.01, feasible=true) for Griewank
+win of ABC (0, feasible=true) against RS (343.841, feasible=true) for Griewank
+win of CEO (0.01, feasible=true) against RS (343.841, feasible=true) for Griewank
+win of GWO (0, feasible=true) against CEO (299.419, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against JADE (304.757, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against TLBO (2,302.667, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against RS (48,413.965, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against ABC (50,783.084, feasible=true) for SchwefelRigle(30)
+win of CEO (299.419, feasible=true) against JADE (304.757, feasible=true) for SchwefelRigle(30)
+win of CEO (299.419, feasible=true) against TLBO (2,302.667, feasible=true) for SchwefelRigle(30)
+win of CEO (299.419, feasible=true) against RS (48,413.965, feasible=true) for SchwefelRigle(30)
+win of CEO (299.419, feasible=true) against ABC (50,783.084, feasible=true) for SchwefelRigle(30)
+win of JADE (304.757, feasible=true) against TLBO (2,302.667, feasible=true) for SchwefelRigle(30)
+win of JADE (304.757, feasible=true) against RS (48,413.965, feasible=true) for SchwefelRigle(30)
+win of JADE (304.757, feasible=true) against ABC (50,783.084, feasible=true) for SchwefelRigle(30)
+win of TLBO (2,302.667, feasible=true) against RS (48,413.965, feasible=true) for SchwefelRigle(30)
+win of TLBO (2,302.667, feasible=true) against ABC (50,783.084, feasible=true) for SchwefelRigle(30)
+win of RS (48,413.965, feasible=true) against ABC (50,783.084, feasible=true) for SchwefelRigle(30)
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against CEO (6.965, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against RS (303.03, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against CEO (6.965, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against RS (303.03, feasible=true) for Rastrigin
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against CEO (6.965, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against RS (303.03, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against CEO (6.965, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against RS (303.03, feasible=true) for Rastrigin
+win of CEO (6.965, feasible=true) against RS (303.03, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against CEO (0.001, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against ABC (0.057, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against TLBO (28.834, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against RS (334,436.111, feasible=true) for RosenbrockDeJong2
+win of CEO (0.001, feasible=true) against ABC (0.057, feasible=true) for RosenbrockDeJong2
+win of CEO (0.001, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of CEO (0.001, feasible=true) against TLBO (28.834, feasible=true) for RosenbrockDeJong2
+win of CEO (0.001, feasible=true) against RS (334,436.111, feasible=true) for RosenbrockDeJong2
+win of ABC (0.057, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of ABC (0.057, feasible=true) against TLBO (28.834, feasible=true) for RosenbrockDeJong2
+win of ABC (0.057, feasible=true) against RS (334,436.111, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against TLBO (28.834, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against RS (334,436.111, feasible=true) for RosenbrockDeJong2
+win of TLBO (28.834, feasible=true) against RS (334,436.111, feasible=true) for RosenbrockDeJong2
+win of ABC (-12,451.048, feasible=true) against JADE (-12,214.172, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against CEO (-12,115.47, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against RS (-5,108.267, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against TLBO (-4,534.717, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against GWO (-541.859, feasible=true) for Schwefel226
+win of JADE (-12,214.172, feasible=true) against CEO (-12,115.47, feasible=true) for Schwefel226
+win of JADE (-12,214.172, feasible=true) against RS (-5,108.267, feasible=true) for Schwefel226
+win of JADE (-12,214.172, feasible=true) against TLBO (-4,534.717, feasible=true) for Schwefel226
+win of JADE (-12,214.172, feasible=true) against GWO (-541.859, feasible=true) for Schwefel226
+win of CEO (-12,115.47, feasible=true) against RS (-5,108.267, feasible=true) for Schwefel226
+win of CEO (-12,115.47, feasible=true) against TLBO (-4,534.717, feasible=true) for Schwefel226
+win of CEO (-12,115.47, feasible=true) against GWO (-541.859, feasible=true) for Schwefel226
+win of RS (-5,108.267, feasible=true) against TLBO (-4,534.717, feasible=true) for Schwefel226
+win of RS (-5,108.267, feasible=true) against GWO (-541.859, feasible=true) for Schwefel226
+win of TLBO (-4,534.717, feasible=true) against GWO (-541.859, feasible=true) for Schwefel226
+draw of TLBO (0, feasible=true) against GWO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of TLBO (0, feasible=true) against RS (36,285.412, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of GWO (0, feasible=true) against RS (36,285.412, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of JADE (0, feasible=true) against RS (36,285.412, feasible=true) for Sphere
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of CEO (0, feasible=true) against RS (36,285.412, feasible=true) for Sphere
+win of ABC (0, feasible=true) against RS (36,285.412, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of GWO (0, feasible=true) against RS (19.693, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of TLBO (0, feasible=true) against RS (19.693, feasible=true) for Ackley
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of JADE (0, feasible=true) against RS (19.693, feasible=true) for Ackley
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of CEO (0, feasible=true) against RS (19.693, feasible=true) for Ackley
+win of ABC (0, feasible=true) against RS (19.693, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of GWO (0, feasible=true) against JADE (0.01, feasible=true) for Griewank
+win of GWO (0, feasible=true) against RS (354.533, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of TLBO (0, feasible=true) against JADE (0.01, feasible=true) for Griewank
+win of TLBO (0, feasible=true) against RS (354.533, feasible=true) for Griewank
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of CEO (0, feasible=true) against JADE (0.01, feasible=true) for Griewank
+win of CEO (0, feasible=true) against RS (354.533, feasible=true) for Griewank
+win of ABC (0, feasible=true) against JADE (0.01, feasible=true) for Griewank
+win of ABC (0, feasible=true) against RS (354.533, feasible=true) for Griewank
+win of JADE (0.01, feasible=true) against RS (354.533, feasible=true) for Griewank
+win of GWO (0, feasible=true) against TLBO (24.178, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against JADE (114.539, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against CEO (833.104, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against ABC (27,400.391, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against RS (49,688.866, feasible=true) for SchwefelRigle(30)
+win of TLBO (24.178, feasible=true) against JADE (114.539, feasible=true) for SchwefelRigle(30)
+win of TLBO (24.178, feasible=true) against CEO (833.104, feasible=true) for SchwefelRigle(30)
+win of TLBO (24.178, feasible=true) against ABC (27,400.391, feasible=true) for SchwefelRigle(30)
+win of TLBO (24.178, feasible=true) against RS (49,688.866, feasible=true) for SchwefelRigle(30)
+win of JADE (114.539, feasible=true) against CEO (833.104, feasible=true) for SchwefelRigle(30)
+win of JADE (114.539, feasible=true) against ABC (27,400.391, feasible=true) for SchwefelRigle(30)
+win of JADE (114.539, feasible=true) against RS (49,688.866, feasible=true) for SchwefelRigle(30)
+win of CEO (833.104, feasible=true) against ABC (27,400.391, feasible=true) for SchwefelRigle(30)
+win of CEO (833.104, feasible=true) against RS (49,688.866, feasible=true) for SchwefelRigle(30)
+win of ABC (27,400.391, feasible=true) against RS (49,688.866, feasible=true) for SchwefelRigle(30)
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against CEO (8.955, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against RS (330.855, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against CEO (8.955, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against RS (330.855, feasible=true) for Rastrigin
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against CEO (8.955, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against RS (330.855, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against CEO (8.955, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against RS (330.855, feasible=true) for Rastrigin
+win of CEO (8.955, feasible=true) against RS (330.855, feasible=true) for Rastrigin
+win of ABC (0.031, feasible=true) against CEO (3.987, feasible=true) for RosenbrockDeJong2
+win of ABC (0.031, feasible=true) against JADE (13.165, feasible=true) for RosenbrockDeJong2
+win of ABC (0.031, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of ABC (0.031, feasible=true) against TLBO (28.86, feasible=true) for RosenbrockDeJong2
+win of ABC (0.031, feasible=true) against RS (267,350.956, feasible=true) for RosenbrockDeJong2
+win of CEO (3.987, feasible=true) against JADE (13.165, feasible=true) for RosenbrockDeJong2
+win of CEO (3.987, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of CEO (3.987, feasible=true) against TLBO (28.86, feasible=true) for RosenbrockDeJong2
+win of CEO (3.987, feasible=true) against RS (267,350.956, feasible=true) for RosenbrockDeJong2
+win of JADE (13.165, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of JADE (13.165, feasible=true) against TLBO (28.86, feasible=true) for RosenbrockDeJong2
+win of JADE (13.165, feasible=true) against RS (267,350.956, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against TLBO (28.86, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against RS (267,350.956, feasible=true) for RosenbrockDeJong2
+win of TLBO (28.86, feasible=true) against RS (267,350.956, feasible=true) for RosenbrockDeJong2
+win of ABC (-12,451.048, feasible=true) against CEO (-12,332.61, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against JADE (-11,858.857, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against TLBO (-4,851.391, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against RS (-4,337.918, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+win of CEO (-12,332.61, feasible=true) against JADE (-11,858.857, feasible=true) for Schwefel226
+win of CEO (-12,332.61, feasible=true) against TLBO (-4,851.391, feasible=true) for Schwefel226
+win of CEO (-12,332.61, feasible=true) against RS (-4,337.918, feasible=true) for Schwefel226
+win of CEO (-12,332.61, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+win of JADE (-11,858.857, feasible=true) against TLBO (-4,851.391, feasible=true) for Schwefel226
+win of JADE (-11,858.857, feasible=true) against RS (-4,337.918, feasible=true) for Schwefel226
+win of JADE (-11,858.857, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+win of TLBO (-4,851.391, feasible=true) against RS (-4,337.918, feasible=true) for Schwefel226
+win of TLBO (-4,851.391, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+win of RS (-4,337.918, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+draw of TLBO (0, feasible=true) against GWO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of TLBO (0, feasible=true) against RS (40,710.476, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of GWO (0, feasible=true) against RS (40,710.476, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of JADE (0, feasible=true) against RS (40,710.476, feasible=true) for Sphere
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of CEO (0, feasible=true) against RS (40,710.476, feasible=true) for Sphere
+win of ABC (0, feasible=true) against RS (40,710.476, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of GWO (0, feasible=true) against RS (19.591, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of TLBO (0, feasible=true) against RS (19.591, feasible=true) for Ackley
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of JADE (0, feasible=true) against RS (19.591, feasible=true) for Ackley
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of CEO (0, feasible=true) against RS (19.591, feasible=true) for Ackley
+win of ABC (0, feasible=true) against RS (19.591, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of GWO (0, feasible=true) against RS (320.767, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of TLBO (0, feasible=true) against RS (320.767, feasible=true) for Griewank
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of JADE (0, feasible=true) against RS (320.767, feasible=true) for Griewank
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of CEO (0, feasible=true) against RS (320.767, feasible=true) for Griewank
+win of ABC (0, feasible=true) against RS (320.767, feasible=true) for Griewank
+win of GWO (0, feasible=true) against JADE (34.01, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against CEO (1,244.187, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against TLBO (9,175.405, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against ABC (32,289.25, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against RS (55,242.682, feasible=true) for SchwefelRigle(30)
+win of JADE (34.01, feasible=true) against CEO (1,244.187, feasible=true) for SchwefelRigle(30)
+win of JADE (34.01, feasible=true) against TLBO (9,175.405, feasible=true) for SchwefelRigle(30)
+win of JADE (34.01, feasible=true) against ABC (32,289.25, feasible=true) for SchwefelRigle(30)
+win of JADE (34.01, feasible=true) against RS (55,242.682, feasible=true) for SchwefelRigle(30)
+win of CEO (1,244.187, feasible=true) against TLBO (9,175.405, feasible=true) for SchwefelRigle(30)
+win of CEO (1,244.187, feasible=true) against ABC (32,289.25, feasible=true) for SchwefelRigle(30)
+win of CEO (1,244.187, feasible=true) against RS (55,242.682, feasible=true) for SchwefelRigle(30)
+win of TLBO (9,175.405, feasible=true) against ABC (32,289.25, feasible=true) for SchwefelRigle(30)
+win of TLBO (9,175.405, feasible=true) against RS (55,242.682, feasible=true) for SchwefelRigle(30)
+win of ABC (32,289.25, feasible=true) against RS (55,242.682, feasible=true) for SchwefelRigle(30)
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against CEO (9.95, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against RS (330.262, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against CEO (9.95, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against RS (330.262, feasible=true) for Rastrigin
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against CEO (9.95, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against RS (330.262, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against CEO (9.95, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against RS (330.262, feasible=true) for Rastrigin
+win of CEO (9.95, feasible=true) against RS (330.262, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against ABC (0.008, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against CEO (4.382, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against TLBO (28.904, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against RS (279,424.921, feasible=true) for RosenbrockDeJong2
+win of ABC (0.008, feasible=true) against CEO (4.382, feasible=true) for RosenbrockDeJong2
+win of ABC (0.008, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of ABC (0.008, feasible=true) against TLBO (28.904, feasible=true) for RosenbrockDeJong2
+win of ABC (0.008, feasible=true) against RS (279,424.921, feasible=true) for RosenbrockDeJong2
+win of CEO (4.382, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of CEO (4.382, feasible=true) against TLBO (28.904, feasible=true) for RosenbrockDeJong2
+win of CEO (4.382, feasible=true) against RS (279,424.921, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against TLBO (28.904, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against RS (279,424.921, feasible=true) for RosenbrockDeJong2
+win of TLBO (28.904, feasible=true) against RS (279,424.921, feasible=true) for RosenbrockDeJong2
+win of ABC (-12,563.614, feasible=true) against CEO (-12,451.048, feasible=true) for Schwefel226
+win of ABC (-12,563.614, feasible=true) against JADE (-11,620.463, feasible=true) for Schwefel226
+win of ABC (-12,563.614, feasible=true) against TLBO (-5,239.469, feasible=true) for Schwefel226
+win of ABC (-12,563.614, feasible=true) against RS (-4,677.184, feasible=true) for Schwefel226
+win of ABC (-12,563.614, feasible=true) against GWO (-541.859, feasible=true) for Schwefel226
+win of CEO (-12,451.048, feasible=true) against JADE (-11,620.463, feasible=true) for Schwefel226
+win of CEO (-12,451.048, feasible=true) against TLBO (-5,239.469, feasible=true) for Schwefel226
+win of CEO (-12,451.048, feasible=true) against RS (-4,677.184, feasible=true) for Schwefel226
+win of CEO (-12,451.048, feasible=true) against GWO (-541.859, feasible=true) for Schwefel226
+win of JADE (-11,620.463, feasible=true) against TLBO (-5,239.469, feasible=true) for Schwefel226
+win of JADE (-11,620.463, feasible=true) against RS (-4,677.184, feasible=true) for Schwefel226
+win of JADE (-11,620.463, feasible=true) against GWO (-541.859, feasible=true) for Schwefel226
+win of TLBO (-5,239.469, feasible=true) against RS (-4,677.184, feasible=true) for Schwefel226
+win of TLBO (-5,239.469, feasible=true) against GWO (-541.859, feasible=true) for Schwefel226
+win of RS (-4,677.184, feasible=true) against GWO (-541.859, feasible=true) for Schwefel226
+draw of TLBO (0, feasible=true) against GWO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of TLBO (0, feasible=true) against RS (36,521.604, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of GWO (0, feasible=true) against RS (36,521.604, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of JADE (0, feasible=true) against RS (36,521.604, feasible=true) for Sphere
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of CEO (0, feasible=true) against RS (36,521.604, feasible=true) for Sphere
+win of ABC (0, feasible=true) against RS (36,521.604, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of GWO (0, feasible=true) against RS (19.381, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of TLBO (0, feasible=true) against RS (19.381, feasible=true) for Ackley
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of JADE (0, feasible=true) against RS (19.381, feasible=true) for Ackley
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of CEO (0, feasible=true) against RS (19.381, feasible=true) for Ackley
+win of ABC (0, feasible=true) against RS (19.381, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of GWO (0, feasible=true) against CEO (0.02, feasible=true) for Griewank
+win of GWO (0, feasible=true) against RS (359.379, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of TLBO (0, feasible=true) against CEO (0.02, feasible=true) for Griewank
+win of TLBO (0, feasible=true) against RS (359.379, feasible=true) for Griewank
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of JADE (0, feasible=true) against CEO (0.02, feasible=true) for Griewank
+win of JADE (0, feasible=true) against RS (359.379, feasible=true) for Griewank
+win of ABC (0, feasible=true) against CEO (0.02, feasible=true) for Griewank
+win of ABC (0, feasible=true) against RS (359.379, feasible=true) for Griewank
+win of CEO (0.02, feasible=true) against RS (359.379, feasible=true) for Griewank
+win of GWO (0, feasible=true) against JADE (122.688, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against CEO (775.544, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against TLBO (3,188.359, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against ABC (22,274.355, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against RS (40,258.579, feasible=true) for SchwefelRigle(30)
+win of JADE (122.688, feasible=true) against CEO (775.544, feasible=true) for SchwefelRigle(30)
+win of JADE (122.688, feasible=true) against TLBO (3,188.359, feasible=true) for SchwefelRigle(30)
+win of JADE (122.688, feasible=true) against ABC (22,274.355, feasible=true) for SchwefelRigle(30)
+win of JADE (122.688, feasible=true) against RS (40,258.579, feasible=true) for SchwefelRigle(30)
+win of CEO (775.544, feasible=true) against TLBO (3,188.359, feasible=true) for SchwefelRigle(30)
+win of CEO (775.544, feasible=true) against ABC (22,274.355, feasible=true) for SchwefelRigle(30)
+win of CEO (775.544, feasible=true) against RS (40,258.579, feasible=true) for SchwefelRigle(30)
+win of TLBO (3,188.359, feasible=true) against ABC (22,274.355, feasible=true) for SchwefelRigle(30)
+win of TLBO (3,188.359, feasible=true) against RS (40,258.579, feasible=true) for SchwefelRigle(30)
+win of ABC (22,274.355, feasible=true) against RS (40,258.579, feasible=true) for SchwefelRigle(30)
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against CEO (7.96, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against RS (317.044, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against CEO (7.96, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against RS (317.044, feasible=true) for Rastrigin
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against CEO (7.96, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against RS (317.044, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against CEO (7.96, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against RS (317.044, feasible=true) for Rastrigin
+win of CEO (7.96, feasible=true) against RS (317.044, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against ABC (0.011, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against CEO (3.987, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against TLBO (28.834, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against RS (404,160.08, feasible=true) for RosenbrockDeJong2
+win of ABC (0.011, feasible=true) against CEO (3.987, feasible=true) for RosenbrockDeJong2
+win of ABC (0.011, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of ABC (0.011, feasible=true) against TLBO (28.834, feasible=true) for RosenbrockDeJong2
+win of ABC (0.011, feasible=true) against RS (404,160.08, feasible=true) for RosenbrockDeJong2
+win of CEO (3.987, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of CEO (3.987, feasible=true) against TLBO (28.834, feasible=true) for RosenbrockDeJong2
+win of CEO (3.987, feasible=true) against RS (404,160.08, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against TLBO (28.834, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against RS (404,160.08, feasible=true) for RosenbrockDeJong2
+win of TLBO (28.834, feasible=true) against RS (404,160.08, feasible=true) for RosenbrockDeJong2
+win of ABC (-12,451.047, feasible=true) against CEO (-12,095.733, feasible=true) for Schwefel226
+win of ABC (-12,451.047, feasible=true) against JADE (-11,621.98, feasible=true) for Schwefel226
+win of ABC (-12,451.047, feasible=true) against RS (-4,452.807, feasible=true) for Schwefel226
+win of ABC (-12,451.047, feasible=true) against TLBO (-4,363.341, feasible=true) for Schwefel226
+win of ABC (-12,451.047, feasible=true) against GWO (-443.066, feasible=true) for Schwefel226
+win of CEO (-12,095.733, feasible=true) against JADE (-11,621.98, feasible=true) for Schwefel226
+win of CEO (-12,095.733, feasible=true) against RS (-4,452.807, feasible=true) for Schwefel226
+win of CEO (-12,095.733, feasible=true) against TLBO (-4,363.341, feasible=true) for Schwefel226
+win of CEO (-12,095.733, feasible=true) against GWO (-443.066, feasible=true) for Schwefel226
+win of JADE (-11,621.98, feasible=true) against RS (-4,452.807, feasible=true) for Schwefel226
+win of JADE (-11,621.98, feasible=true) against TLBO (-4,363.341, feasible=true) for Schwefel226
+win of JADE (-11,621.98, feasible=true) against GWO (-443.066, feasible=true) for Schwefel226
+win of RS (-4,452.807, feasible=true) against TLBO (-4,363.341, feasible=true) for Schwefel226
+win of RS (-4,452.807, feasible=true) against GWO (-443.066, feasible=true) for Schwefel226
+win of TLBO (-4,363.341, feasible=true) against GWO (-443.066, feasible=true) for Schwefel226
+draw of TLBO (0, feasible=true) against GWO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of TLBO (0, feasible=true) against RS (35,004.848, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of GWO (0, feasible=true) against RS (35,004.848, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of JADE (0, feasible=true) against RS (35,004.848, feasible=true) for Sphere
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of CEO (0, feasible=true) against RS (35,004.848, feasible=true) for Sphere
+win of ABC (0, feasible=true) against RS (35,004.848, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of GWO (0, feasible=true) against JADE (1.502, feasible=true) for Ackley
+win of GWO (0, feasible=true) against RS (19.177, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of TLBO (0, feasible=true) against JADE (1.502, feasible=true) for Ackley
+win of TLBO (0, feasible=true) against RS (19.177, feasible=true) for Ackley
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of CEO (0, feasible=true) against JADE (1.502, feasible=true) for Ackley
+win of CEO (0, feasible=true) against RS (19.177, feasible=true) for Ackley
+win of ABC (0, feasible=true) against JADE (1.502, feasible=true) for Ackley
+win of ABC (0, feasible=true) against RS (19.177, feasible=true) for Ackley
+win of JADE (1.502, feasible=true) against RS (19.177, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of GWO (0, feasible=true) against JADE (0.02, feasible=true) for Griewank
+win of GWO (0, feasible=true) against RS (362.312, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of TLBO (0, feasible=true) against JADE (0.02, feasible=true) for Griewank
+win of TLBO (0, feasible=true) against RS (362.312, feasible=true) for Griewank
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of CEO (0, feasible=true) against JADE (0.02, feasible=true) for Griewank
+win of CEO (0, feasible=true) against RS (362.312, feasible=true) for Griewank
+win of ABC (0, feasible=true) against JADE (0.02, feasible=true) for Griewank
+win of ABC (0, feasible=true) against RS (362.312, feasible=true) for Griewank
+win of JADE (0.02, feasible=true) against RS (362.312, feasible=true) for Griewank
+win of GWO (0, feasible=true) against JADE (220.077, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against CEO (302.309, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against TLBO (440.939, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against ABC (39,887.325, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against RS (70,834.252, feasible=true) for SchwefelRigle(30)
+win of JADE (220.077, feasible=true) against CEO (302.309, feasible=true) for SchwefelRigle(30)
+win of JADE (220.077, feasible=true) against TLBO (440.939, feasible=true) for SchwefelRigle(30)
+win of JADE (220.077, feasible=true) against ABC (39,887.325, feasible=true) for SchwefelRigle(30)
+win of JADE (220.077, feasible=true) against RS (70,834.252, feasible=true) for SchwefelRigle(30)
+win of CEO (302.309, feasible=true) against TLBO (440.939, feasible=true) for SchwefelRigle(30)
+win of CEO (302.309, feasible=true) against ABC (39,887.325, feasible=true) for SchwefelRigle(30)
+win of CEO (302.309, feasible=true) against RS (70,834.252, feasible=true) for SchwefelRigle(30)
+win of TLBO (440.939, feasible=true) against ABC (39,887.325, feasible=true) for SchwefelRigle(30)
+win of TLBO (440.939, feasible=true) against RS (70,834.252, feasible=true) for SchwefelRigle(30)
+win of ABC (39,887.325, feasible=true) against RS (70,834.252, feasible=true) for SchwefelRigle(30)
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against CEO (6.965, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against RS (311.073, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against CEO (6.965, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against RS (311.073, feasible=true) for Rastrigin
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against CEO (6.965, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against RS (311.073, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against CEO (6.965, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against RS (311.073, feasible=true) for Rastrigin
+win of CEO (6.965, feasible=true) against RS (311.073, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against ABC (0.05, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against CEO (3.989, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against TLBO (28.96, feasible=true) for RosenbrockDeJong2
+win of JADE (0, feasible=true) against RS (278,839.448, feasible=true) for RosenbrockDeJong2
+win of ABC (0.05, feasible=true) against CEO (3.989, feasible=true) for RosenbrockDeJong2
+win of ABC (0.05, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of ABC (0.05, feasible=true) against TLBO (28.96, feasible=true) for RosenbrockDeJong2
+win of ABC (0.05, feasible=true) against RS (278,839.448, feasible=true) for RosenbrockDeJong2
+win of CEO (3.989, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of CEO (3.989, feasible=true) against TLBO (28.96, feasible=true) for RosenbrockDeJong2
+win of CEO (3.989, feasible=true) against RS (278,839.448, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against TLBO (28.96, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against RS (278,839.448, feasible=true) for RosenbrockDeJong2
+win of TLBO (28.96, feasible=true) against RS (278,839.448, feasible=true) for RosenbrockDeJong2
+win of JADE (-12,569.487, feasible=true) against ABC (-12,451.048, feasible=true) for Schwefel226
+win of JADE (-12,569.487, feasible=true) against CEO (-11,878.594, feasible=true) for Schwefel226
+win of JADE (-12,569.487, feasible=true) against TLBO (-4,966.929, feasible=true) for Schwefel226
+win of JADE (-12,569.487, feasible=true) against RS (-4,252.326, feasible=true) for Schwefel226
+win of JADE (-12,569.487, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against CEO (-11,878.594, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against TLBO (-4,966.929, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against RS (-4,252.326, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+win of CEO (-11,878.594, feasible=true) against TLBO (-4,966.929, feasible=true) for Schwefel226
+win of CEO (-11,878.594, feasible=true) against RS (-4,252.326, feasible=true) for Schwefel226
+win of CEO (-11,878.594, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+win of TLBO (-4,966.929, feasible=true) against RS (-4,252.326, feasible=true) for Schwefel226
+win of TLBO (-4,966.929, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+win of RS (-4,252.326, feasible=true) against GWO (-418.983, feasible=true) for Schwefel226
+draw of TLBO (0, feasible=true) against GWO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of TLBO (0, feasible=true) against RS (34,789.594, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of GWO (0, feasible=true) against RS (34,789.594, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of JADE (0, feasible=true) against RS (34,789.594, feasible=true) for Sphere
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of CEO (0, feasible=true) against RS (34,789.594, feasible=true) for Sphere
+win of ABC (0, feasible=true) against RS (34,789.594, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of GWO (0, feasible=true) against JADE (1.34, feasible=true) for Ackley
+win of GWO (0, feasible=true) against RS (19.302, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of TLBO (0, feasible=true) against JADE (1.34, feasible=true) for Ackley
+win of TLBO (0, feasible=true) against RS (19.302, feasible=true) for Ackley
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of CEO (0, feasible=true) against JADE (1.34, feasible=true) for Ackley
+win of CEO (0, feasible=true) against RS (19.302, feasible=true) for Ackley
+win of ABC (0, feasible=true) against JADE (1.34, feasible=true) for Ackley
+win of ABC (0, feasible=true) against RS (19.302, feasible=true) for Ackley
+win of JADE (1.34, feasible=true) against RS (19.302, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of GWO (0, feasible=true) against CEO (0.007, feasible=true) for Griewank
+win of GWO (0, feasible=true) against RS (342.908, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of TLBO (0, feasible=true) against CEO (0.007, feasible=true) for Griewank
+win of TLBO (0, feasible=true) against RS (342.908, feasible=true) for Griewank
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of JADE (0, feasible=true) against CEO (0.007, feasible=true) for Griewank
+win of JADE (0, feasible=true) against RS (342.908, feasible=true) for Griewank
+win of ABC (0, feasible=true) against CEO (0.007, feasible=true) for Griewank
+win of ABC (0, feasible=true) against RS (342.908, feasible=true) for Griewank
+win of CEO (0.007, feasible=true) against RS (342.908, feasible=true) for Griewank
+win of GWO (0, feasible=true) against JADE (57.653, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against CEO (442.998, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against TLBO (4,531.329, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against ABC (30,160.673, feasible=true) for SchwefelRigle(30)
+win of GWO (0, feasible=true) against RS (57,514.733, feasible=true) for SchwefelRigle(30)
+win of JADE (57.653, feasible=true) against CEO (442.998, feasible=true) for SchwefelRigle(30)
+win of JADE (57.653, feasible=true) against TLBO (4,531.329, feasible=true) for SchwefelRigle(30)
+win of JADE (57.653, feasible=true) against ABC (30,160.673, feasible=true) for SchwefelRigle(30)
+win of JADE (57.653, feasible=true) against RS (57,514.733, feasible=true) for SchwefelRigle(30)
+win of CEO (442.998, feasible=true) against TLBO (4,531.329, feasible=true) for SchwefelRigle(30)
+win of CEO (442.998, feasible=true) against ABC (30,160.673, feasible=true) for SchwefelRigle(30)
+win of CEO (442.998, feasible=true) against RS (57,514.733, feasible=true) for SchwefelRigle(30)
+win of TLBO (4,531.329, feasible=true) against ABC (30,160.673, feasible=true) for SchwefelRigle(30)
+win of TLBO (4,531.329, feasible=true) against RS (57,514.733, feasible=true) for SchwefelRigle(30)
+win of ABC (30,160.673, feasible=true) against RS (57,514.733, feasible=true) for SchwefelRigle(30)
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against CEO (8.955, feasible=true) for Rastrigin
+win of GWO (0, feasible=true) against RS (323.795, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Rastrigin
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against CEO (8.955, feasible=true) for Rastrigin
+win of TLBO (0, feasible=true) against RS (323.795, feasible=true) for Rastrigin
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against CEO (8.955, feasible=true) for Rastrigin
+win of JADE (0, feasible=true) against RS (323.795, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against CEO (8.955, feasible=true) for Rastrigin
+win of ABC (0, feasible=true) against RS (323.795, feasible=true) for Rastrigin
+win of CEO (8.955, feasible=true) against RS (323.795, feasible=true) for Rastrigin
+win of ABC (0.005, feasible=true) against CEO (0.614, feasible=true) for RosenbrockDeJong2
+win of ABC (0.005, feasible=true) against JADE (3.987, feasible=true) for RosenbrockDeJong2
+win of ABC (0.005, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of ABC (0.005, feasible=true) against TLBO (28.876, feasible=true) for RosenbrockDeJong2
+win of ABC (0.005, feasible=true) against RS (246,087.239, feasible=true) for RosenbrockDeJong2
+win of CEO (0.614, feasible=true) against JADE (3.987, feasible=true) for RosenbrockDeJong2
+win of CEO (0.614, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of CEO (0.614, feasible=true) against TLBO (28.876, feasible=true) for RosenbrockDeJong2
+win of CEO (0.614, feasible=true) against RS (246,087.239, feasible=true) for RosenbrockDeJong2
+win of JADE (3.987, feasible=true) against GWO (27.207, feasible=true) for RosenbrockDeJong2
+win of JADE (3.987, feasible=true) against TLBO (28.876, feasible=true) for RosenbrockDeJong2
+win of JADE (3.987, feasible=true) against RS (246,087.239, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against TLBO (28.876, feasible=true) for RosenbrockDeJong2
+win of GWO (27.207, feasible=true) against RS (246,087.239, feasible=true) for RosenbrockDeJong2
+win of TLBO (28.876, feasible=true) against RS (246,087.239, feasible=true) for RosenbrockDeJong2
+win of ABC (-12,451.048, feasible=true) against JADE (-11,977.295, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against CEO (-11,977.295, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against TLBO (-4,592.967, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against RS (-4,124.445, feasible=true) for Schwefel226
+win of ABC (-12,451.048, feasible=true) against GWO (-541.859, feasible=true) for Schwefel226
+draw of JADE (-11,977.295, feasible=true) against CEO (-11,977.295, feasible=true) for Schwefel226
+win of JADE (-11,977.295, feasible=true) against TLBO (-4,592.967, feasible=true) for Schwefel226
+win of JADE (-11,977.295, feasible=true) against RS (-4,124.445, feasible=true) for Schwefel226
+win of JADE (-11,977.295, feasible=true) against GWO (-541.859, feasible=true) for Schwefel226
+win of CEO (-11,977.295, feasible=true) against TLBO (-4,592.967, feasible=true) for Schwefel226
+win of CEO (-11,977.295, feasible=true) against RS (-4,124.445, feasible=true) for Schwefel226
+win of CEO (-11,977.295, feasible=true) against GWO (-541.859, feasible=true) for Schwefel226
+win of TLBO (-4,592.967, feasible=true) against RS (-4,124.445, feasible=true) for Schwefel226
+win of TLBO (-4,592.967, feasible=true) against GWO (-541.859, feasible=true) for Schwefel226
+win of RS (-4,124.445, feasible=true) against GWO (-541.859, feasible=true) for Schwefel226
+draw of TLBO (0, feasible=true) against GWO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of TLBO (0, feasible=true) against RS (38,263.617, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against JADE (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of GWO (0, feasible=true) against RS (38,263.617, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against CEO (0, feasible=true) for Sphere
+draw of JADE (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of JADE (0, feasible=true) against RS (38,263.617, feasible=true) for Sphere
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Sphere
+win of CEO (0, feasible=true) against RS (38,263.617, feasible=true) for Sphere
+win of ABC (0, feasible=true) against RS (38,263.617, feasible=true) for Sphere
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of GWO (0, feasible=true) against JADE (1.646, feasible=true) for Ackley
+win of GWO (0, feasible=true) against RS (19.741, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Ackley
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of TLBO (0, feasible=true) against JADE (1.646, feasible=true) for Ackley
+win of TLBO (0, feasible=true) against RS (19.741, feasible=true) for Ackley
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Ackley
+win of CEO (0, feasible=true) against JADE (1.646, feasible=true) for Ackley
+win of CEO (0, feasible=true) against RS (19.741, feasible=true) for Ackley
+win of ABC (0, feasible=true) against JADE (1.646, feasible=true) for Ackley
+win of ABC (0, feasible=true) against RS (19.741, feasible=true) for Ackley
+win of JADE (1.646, feasible=true) against RS (19.741, feasible=true) for Ackley
+draw of GWO (0, feasible=true) against TLBO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of GWO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of GWO (0, feasible=true) against JADE (0.044, feasible=true) for Griewank
+win of GWO (0, feasible=true) against RS (276.296, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against CEO (0, feasible=true) for Griewank
+draw of TLBO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of TLBO (0, feasible=true) against JADE (0.044, feasible=true) for Griewank
+win of TLBO (0, feasible=true) against RS (276.296, feasible=true) for Griewank
+draw of CEO (0, feasible=true) against ABC (0, feasible=true) for Griewank
+win of CEO (0, feasible=true) against JADE (0.044, feasible=true) for Griewank
+win of CEO (0, feasible=true) against RS (276.296, feasible=true) for Griewank
+win of ABC (0, feasible=true) against JADE (0.044, feasible=true) for Griewank
+win of ABC (0, feasible=true) against RS (276.296, feasible=true) for Griewank
+win of JADE (0.044, feasible=true) against RS (276.296, feasible=true) for Griewank
+TrueSkill One-On-One rating:
+ABC - Mean(mu)=4.09, Std-Dev(sigma)=0.76 RI=[2.57, 5.61]
+JADE - Mean(mu)=2.94, Std-Dev(sigma)=0.8 RI=[1.34, 4.54]
+CEO - Mean(mu)=2.65, Std-Dev(sigma)=0.78 RI=[1.08, 4.21]
+TLBO - Mean(mu)=2.15, Std-Dev(sigma)=0.81 RI=[0.52, 3.77]
+GWO - Mean(mu)=1.47, Std-Dev(sigma)=0.86 RI=[-0.25, 3.19]
+RS - Mean(mu)=-5.84, Std-Dev(sigma)=0.95 RI=[-7.75, -3.93]
+
+TrueSkill Free-For-All rating:
+JADE - Mean(mu)=27.76, Std-Dev(sigma)=0.71 RI=[26.35, 29.18]
+ABC - Mean(mu)=27.66, Std-Dev(sigma)=0.7 RI=[26.26, 29.07]
+CEO - Mean(mu)=26.83, Std-Dev(sigma)=0.7 RI=[25.42, 28.23]
+GWO - Mean(mu)=26.28, Std-Dev(sigma)=0.7 RI=[24.87, 27.68]
+TLBO - Mean(mu)=25.59, Std-Dev(sigma)=0.69 RI=[24.2, 26.98]
+RS - Mean(mu)=16.48, Std-Dev(sigma)=1.04 RI=[14.39, 18.56]
+
+Glicko2 rating:
+JADE - Rating=1,656.3 RD=50 ro=0.06 RI=[1556.29, 1756.29]
+ABC - Rating=1,656.3 RD=50 ro=0.06 RI=[1556.29, 1756.29]
+GWO - Rating=1,576.7 RD=50 ro=0.06 RI=[1476.67, 1676.67]
+CEO - Rating=1,570.8 RD=50 ro=0.06 RI=[1470.77, 1670.77]
+TLBO - Rating=1,517.7 RD=50 ro=0.06 RI=[1417.69, 1617.69]
+RS - Rating=1,022.3 RD=50 ro=0.06 RI=[922.3, 1122.3]
+
+Game results:
+JADE [win=172, lose=66, draw=112]
+	 Against:{RS=[win=70, lose=0, draw=0], TLBO=[win=29, lose=10, draw=31], ABC=[win=19, lose=20, draw=31], CEO=[win=34, lose=17, draw=19], GWO=[win=20, lose=19, draw=31]}
+	 Problems:{Sphere=[win=10, lose=0, draw=40], Rastrigin=[win=20, lose=0, draw=30], Griewank=[win=13, lose=12, draw=25], Schwefel226=[win=35, lose=14, draw=1], Ackley=[win=10, lose=24, draw=16], SchwefelRigle(30)=[win=38, lose=12, draw=0], RosenbrockDeJong2=[win=46, lose=4, draw=0]}
+ABC [win=159, lose=53, draw=138]
+	 Against:{RS=[win=69, lose=1, draw=0], TLBO=[win=20, lose=10, draw=40], JADE=[win=20, lose=19, draw=31], CEO=[win=30, lose=13, draw=27], GWO=[win=20, lose=10, draw=40]}
+	 Problems:{Sphere=[win=10, lose=0, draw=40], Rastrigin=[win=20, lose=0, draw=30], Griewank=[win=16, lose=0, draw=34], Schwefel226=[win=49, lose=1, draw=0], Ackley=[win=16, lose=0, draw=34], SchwefelRigle(30)=[win=9, lose=41, draw=0], RosenbrockDeJong2=[win=39, lose=11, draw=0]}
+GWO [win=132, lose=80, draw=138]
+	 Against:{RS=[win=60, lose=10, draw=0], TLBO=[win=20, lose=10, draw=40], ABC=[win=10, lose=20, draw=40], JADE=[win=19, lose=20, draw=31], CEO=[win=23, lose=20, draw=27]}
+	 Problems:{Sphere=[win=10, lose=0, draw=40], Rastrigin=[win=20, lose=0, draw=30], Griewank=[win=16, lose=0, draw=34], Schwefel226=[win=0, lose=50, draw=0], Ackley=[win=16, lose=0, draw=34], SchwefelRigle(30)=[win=50, lose=0, draw=0], RosenbrockDeJong2=[win=20, lose=30, draw=0]}
+CEO [win=149, lose=101, draw=100]
+	 Against:{RS=[win=70, lose=0, draw=0], TLBO=[win=29, lose=14, draw=27], ABC=[win=13, lose=30, draw=27], JADE=[win=17, lose=34, draw=19], GWO=[win=20, lose=23, draw=27]}
+	 Problems:{Sphere=[win=10, lose=0, draw=40], Rastrigin=[win=10, lose=40, draw=0], Griewank=[win=13, lose=12, draw=25], Schwefel226=[win=35, lose=14, draw=1], Ackley=[win=16, lose=0, draw=34], SchwefelRigle(30)=[win=30, lose=20, draw=0], RosenbrockDeJong2=[win=35, lose=15, draw=0]}
+TLBO [win=112, lose=100, draw=138]
+	 Against:{RS=[win=68, lose=2, draw=0], ABC=[win=10, lose=20, draw=40], JADE=[win=10, lose=29, draw=31], CEO=[win=14, lose=29, draw=27], GWO=[win=10, lose=20, draw=40]}
+	 Problems:{Sphere=[win=10, lose=0, draw=40], Rastrigin=[win=20, lose=0, draw=30], Griewank=[win=16, lose=0, draw=34], Schwefel226=[win=18, lose=32, draw=0], Ackley=[win=16, lose=0, draw=34], SchwefelRigle(30)=[win=22, lose=28, draw=0], RosenbrockDeJong2=[win=10, lose=40, draw=0]}
+RS [win=13, lose=337, draw=0]
+	 Against:{TLBO=[win=2, lose=68, draw=0], ABC=[win=1, lose=69, draw=0], JADE=[win=0, lose=70, draw=0], CEO=[win=0, lose=70, draw=0], GWO=[win=10, lose=60, draw=0]}
+	 Problems:{Sphere=[win=0, lose=50, draw=0], Rastrigin=[win=0, lose=50, draw=0], Griewank=[win=0, lose=50, draw=0], Schwefel226=[win=12, lose=38, draw=0], Ackley=[win=0, lose=50, draw=0], SchwefelRigle(30)=[win=1, lose=49, draw=0], RosenbrockDeJong2=[win=0, lose=50, draw=0]}
