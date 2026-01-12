@@ -1,0 +1,4 @@
+rootProject.name = 'ER-N3'
+
+include ':EARS'
+project(':EARS').projectDir = new File('../EARS') // example: new File('../my_projects/EARS')  or project.projectDir.path + "/../EARS"
