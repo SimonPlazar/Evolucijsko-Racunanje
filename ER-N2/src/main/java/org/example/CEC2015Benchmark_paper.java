@@ -3,8 +3,10 @@ package org.example;
 import org.um.feri.ears.algorithms.NumberAlgorithm;
 import org.um.feri.ears.algorithms.so.ceo.CEO;
 import org.um.feri.ears.algorithms.so.gwo.GWO;
-import org.um.feri.ears.algorithms.so.ba.BA;
 import org.um.feri.ears.algorithms.so.sma.SMA;
+import org.um.feri.ears.algorithms.so.de.DE;
+import org.um.feri.ears.algorithms.so.abc.ABC;
+import org.um.feri.ears.algorithms.so.pso.PSO;
 import org.um.feri.ears.benchmark.Benchmark;
 import org.um.feri.ears.benchmark.CEC2015Benchmark;
 
@@ -12,13 +14,14 @@ import java.util.ArrayList;
 
 public class CEC2015Benchmark_paper {
     public static void main(String[] args) {
-        Benchmark.printInfo = false; //prints one on one results
-        //add algorithms to a list
+        Benchmark.printInfo = true;
 
         ArrayList<NumberAlgorithm> algorithms = new ArrayList<NumberAlgorithm>();
         algorithms.add(new GWO());
-        algorithms.add(new BA());
         algorithms.add(new SMA());
+        algorithms.add(new ABC());
+        algorithms.add(new PSO());
+        algorithms.add(new DE());
 
         algorithms.add(new CEO());
 
