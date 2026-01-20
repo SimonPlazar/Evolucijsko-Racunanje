@@ -14,8 +14,8 @@ MaxFES = Dim * 1e4  # Maximum number of evaluation functions
 N = 10  # number of chaotic samples
 Np = 30  # population size  (Np is set to an even number greater than 2)
 
-# rng = PredefinedRandom("ceo_random.txt")
-rng = PredefinedRandom("ceo_random_mini.txt")
+rng = PredefinedRandom("ceo_random.txt")
+# rng = PredefinedRandom("ceo_random_mini.txt")
 time_start = time.time()
 ceo = CEO(func, Np, Dim, Varmin, Varmax, N, MaxFES, rng)
 Best, fBest, history = ceo.optimize()

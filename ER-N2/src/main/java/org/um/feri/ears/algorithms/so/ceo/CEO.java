@@ -81,7 +81,7 @@ public class CEO extends NumberAlgorithm {
             double[] ub = getPopBounds(true, dim);
 
             for (int i = 0; i < popSize; i += 2) {
-                if (task.isStopCriterion()) break;
+//                if (task.isStopCriterion()) break;
 
                 int[] pair = {indices[i], indices[i + 1]};
 
@@ -168,12 +168,6 @@ public class CEO extends NumberAlgorithm {
                         NumberSolution<Double> localBestTrial = getBestFromList(trials);
                         if (task.problem.isFirstBetter(localBestTrial, parent)) {
                             population.set(pair[k], new NumberSolution<>(localBestTrial));
-                            if (task.problem.isFirstBetter(localBestTrial, bestSolution)) {
-                                bestSolution = new NumberSolution<>(localBestTrial);
-                                if (isDebug) {
-                                    printDebug();
-                                }
-                            }
                         }
                     }
                 }
@@ -182,13 +176,15 @@ public class CEO extends NumberAlgorithm {
             task.incrementNumberOfIterations();
 
             // Izpis indeksa za debugging
-//            printDebug();
+            printDebug();
 
             // Stagnacija
 //            if (handleStagnation(fBestOld, bestSolution.getEval())) {
 //                System.out.println("Stopping due to stagnation.");
 //                break;
 //            }
+
+            updateBestSolution();
         }
         return bestSolution;
     }

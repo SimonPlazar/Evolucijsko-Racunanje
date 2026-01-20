@@ -41,7 +41,8 @@ public class CEO_Runner {
 
         // 3. Create the algorithm
         NumberAlgorithm alg = new CEO(popSize, N);
-        alg.setDebug(true);
+//        alg.setDebug(true);
+        alg.setDebug(false);
         NumberSolution<Double> best;
 
         // 4. Run the algorithm
